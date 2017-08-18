@@ -1,32 +1,21 @@
-package org.pprls;
-
-import javax.servlet.annotation.WebServlet;
+package org.pprls.ui.views;
 
 import com.vaadin.annotations.Theme;
-import com.vaadin.annotations.VaadinServletConfiguration;
-import com.vaadin.server.VaadinRequest;
-import com.vaadin.server.VaadinServlet;
+import com.vaadin.navigator.View;
+import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.ui.*;
 
 import java.util.ArrayList;
 
-/**
- * This UI is the application entry point. A UI may either represent a browser window
- * (or tab) or some part of a html page where a Vaadin application is embedded.
- * <p>
- * The UI is initialized using {@link #init(VaadinRequest)}. This method is intended to be
- * overridden to add component to the user interface and initialize non-component functionality.
- */
 @Theme("mytheme")
-public class MyUI extends UI {
+public class EmployeeView extends VerticalLayout implements View {
 
-    @Override
-    protected void init(VaadinRequest vaadinRequest) {
-        final VerticalLayout layout = new VerticalLayout();
+    public EmployeeView() {
+        setSizeFull();
 
         final HorizontalLayout layout2 = new HorizontalLayout();
 
-        layout.addComponent(layout2);
+        this.addComponent(layout2);
 
         final VerticalLayout layout3 = new VerticalLayout();
 
@@ -75,14 +64,10 @@ public class MyUI extends UI {
         layout4.addComponent(pastButton);
         layout4.addComponent(searchCaseButton);
         layout4.addComponent(protocolButton);
-
-
-
-        setContent(layout);
     }
 
-    @WebServlet(urlPatterns = "/*", name = "MyUIServlet", asyncSupported = true)
-    @VaadinServletConfiguration(ui = MyUI.class, productionMode = false)
-    public static class MyUIServlet extends VaadinServlet {
+    @Override
+    public void enter(ViewChangeListener.ViewChangeEvent event) {
+        Notification.show("Welcome to the Animal Farm");
     }
 }
