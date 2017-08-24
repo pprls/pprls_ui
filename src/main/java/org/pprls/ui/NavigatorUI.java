@@ -4,12 +4,15 @@ import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
+import com.vaadin.ui.Notification;
 import com.vaadin.ui.UI;
+import org.apache.log4j.Logger;
 import org.pprls.ui.views.EmployeeView;
 import org.pprls.ui.views.LoginView;
 import org.pprls.ui.views.ManagerView;
 
 import javax.servlet.annotation.WebServlet;
+import java.net.MalformedURLException;
 
 /**
  * Created by kapostolou on 18/8/2017.
@@ -20,16 +23,24 @@ public class NavigatorUI extends UI {
     public static final String EMPLOYEEVIEW = "employeeView";
     public static final String MANAGERVIEW = "managerView";
 
+    private final static Logger log =
+            Logger.getLogger(NavigatorUI.class.getName());
+
     @Override
     protected void init(VaadinRequest request) {
-        getPage().setTitle("Navigation Example");
+        log.debug("UI Started");
+        getPage().setTitle("pprls");
 
         // Create a navigator to control the views
         navigator = new Navigator(this, this);
 
         // Create and register the views
         navigator.addView(EMPLOYEEVIEW, new EmployeeView());
-        navigator.addView(MANAGERVIEW, new ManagerView());
+        try {
+            navigator.addView(MANAGERVIEW, new ManagerView());
+        } catch (MalformedURLException e) {
+            Notification.show("Failed to open manager view with exception : "+e.getLocalizedMessage());
+        }
         navigator.addView(LOGINVIEW, new LoginView());
 
         navigator.navigateTo(LOGINVIEW);

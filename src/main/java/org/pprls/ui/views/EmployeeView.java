@@ -64,6 +64,27 @@ public class EmployeeView extends VerticalLayout implements View {
         layout4.addComponent(pastButton);
         layout4.addComponent(searchCaseButton);
         layout4.addComponent(protocolButton);
+
+        buttonAssignTask.addClickListener(new Button.ClickListener(){
+
+            @Override
+            public void buttonClick(Button.ClickEvent clickEvent) {
+                // Create a sub-window and set the content
+                Window subWindow = new Window("Ανάθεση εργασίας στη διεύθυνση");
+                VerticalLayout subContent = new VerticalLayout();
+                subWindow.setContent(subContent);
+
+                // Put some components in it
+                subContent.addComponent(new Label("Meatball sub"));
+                subContent.addComponent(new Button("Awlright"));
+
+                // Center it in the browser window
+                subWindow.center();
+
+                // Open it in the UI
+                UI.getCurrent().addWindow(subWindow);
+            }
+        });
     }
 
     @Override
