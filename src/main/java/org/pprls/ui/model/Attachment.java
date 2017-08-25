@@ -1,19 +1,19 @@
 package org.pprls.ui.model;
 
 public class Attachment<T> {
-    private String type;
+    private AttachmentType type;
     private T value;
 
-    public Attachment(String type, T value) {
+    public Attachment(AttachmentType type, T value) {
         this.type = type;
         this.value = value;
     }
 
-    public String getType() {
+    public AttachmentType getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(AttachmentType type) {
         this.type = type;
     }
 

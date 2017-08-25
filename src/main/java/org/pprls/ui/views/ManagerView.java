@@ -3,30 +3,25 @@ package org.pprls.ui.views;
 import com.vaadin.annotations.Theme;
 import com.vaadin.data.Binder;
 import com.vaadin.data.provider.ListDataProvider;
-import com.vaadin.icons.VaadinIcons;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.ui.*;
 import com.vaadin.ui.components.grid.HeaderCell;
 import com.vaadin.ui.components.grid.HeaderRow;
 import com.vaadin.ui.themes.ValoTheme;
-import org.pprls.ui.model.Attachment;
 import org.pprls.ui.model.Item;
 import org.pprls.ui.model.ItemGenerator;
+import org.pprls.ui.views.widgets.AttachmentViewer;
 import org.vaadin.alump.ckeditor.CKEditorConfig;
 import org.vaadin.alump.ckeditor.CKEditorTextField;
-import pl.pdfviewer.PdfViewer;
 
-import java.io.File;
 import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.List;
 
 @Theme("mytheme")
 public class ManagerView extends VerticalLayout implements View {
 
     private SingleSelect<Item> itemSelection;
-    private int index = 0;
 
     public ManagerView() throws MalformedURLException {
         setSizeFull();
@@ -43,6 +38,8 @@ public class ManagerView extends VerticalLayout implements View {
         mainLayout.addComponent(docsLayout);
         mainLayout.addComponent(tasksLayout);
 
+        Label messageTitle = new Label("Διαβιβαστικό");
+        messageTitle.setStyleName(ValoTheme.LABEL_H2);
         // Διαββιβαστικό
         CKEditorConfig config = new CKEditorConfig();
         config.useCompactTags();
@@ -52,33 +49,14 @@ public class ManagerView extends VerticalLayout implements View {
         config.setReadOnly(true);
         config.setWidth("100%");
         final CKEditorTextField rtArea = new CKEditorTextField(config);
+        rtArea.setViewWithoutEditor(true);
         rtArea.setSizeFull();
 
-        Button prev = new Button();
-        prev.setIcon(VaadinIcons.ARROW_CIRCLE_LEFT);
-        Button next = new Button();
-        next.setIcon(VaadinIcons.ARROW_CIRCLE_RIGHT);
-
-        HorizontalLayout navLayout = new HorizontalLayout();
-        navLayout.setWidth("100%");
-        navLayout.setDefaultComponentAlignment(Alignment.MIDDLE_CENTER);
-        navLayout.addComponents(prev);
-        navLayout.addComponents(next);
-
-        //PdfViewer
-        final PdfViewer pdfArea = new PdfViewer();
-        pdfArea.setSizeFull();
-
-        final VerticalLayout attachmentsLayout = new VerticalLayout();
-        attachmentsLayout.setMargin(false);
-        attachmentsLayout.setSizeFull();
-
-        attachmentsLayout.addComponentsAndExpand(pdfArea);
-        attachmentsLayout.addComponent(navLayout);
-
+        final AttachmentViewer attachmentsViewer = new AttachmentViewer();
         // docsLayout
+        docsLayout.addComponent(messageTitle);
         docsLayout.addComponent(rtArea);
-        docsLayout.addComponentsAndExpand(attachmentsLayout);
+        docsLayout.addComponentsAndExpand(attachmentsViewer);
 
         final HorizontalLayout buttonLayout  = new HorizontalLayout();
         buttonLayout.setSizeFull();
@@ -92,7 +70,7 @@ public class ManagerView extends VerticalLayout implements View {
         buttonLayout.addComponent(buttonAssign);
 
         docsLayout.setExpandRatio(rtArea, 3.0f);
-        docsLayout.setExpandRatio(attachmentsLayout, 6.0f);
+        docsLayout.setExpandRatio(attachmentsViewer, 6.0f);
         docsLayout.setExpandRatio(buttonLayout, 1.0f);
 
         // tasksLayout
@@ -164,32 +142,9 @@ public class ManagerView extends VerticalLayout implements View {
         final Binder<Item> itemBinder = new Binder<>(Item.class);
         itemBinder.bind(rtArea, "instructions");
         itemSelection.addValueChangeListener(event -> {
-            itemBinder.readBean(itemSelection.getValue());
-            index = 0;
-            if(!itemSelection.getValue().getAttachments().isEmpty()) {
-                setAttachment(pdfArea, itemSelection, index);
-            }
+            itemBinder.setBean(itemSelection.getValue());
+            if(!itemSelection.isEmpty()) attachmentsViewer.setAttachments(itemSelection.getValue().getAttachments()); // the if is there to cover the deselect
         });
-//        final Binder<Attachment> attachmentBinder = new Binder<>(Attachment.class);
-//        attachmentBinder.forField(pdfArea, Attachment::getValue, Attachment::setValue);
-
-        // Next Prev click listeners
-        prev.addClickListener(click -> setAttachment(pdfArea, itemSelection, prev()));
-        next.addClickListener(click -> setAttachment(pdfArea, itemSelection, next()));
-    }
-
-    private void setAttachment(PdfViewer pdfArea, SingleSelect<Item> itemSelection, int i) {
-        Attachment<URL> attachment = itemSelection.getValue().getAttachments().get(i);
-        String filename = attachment.getValue().getFile();
-        pdfArea.setFile(new File(filename));
-    }
-
-    private int prev() {
-        return index = index == 0 ? itemSelection.getValue().getAttachments().size() - 1 : index - 1;
-    }
-
-    private int next() {
-        return index = index == itemSelection.getValue().getAttachments().size()-1? 0 : index +1;
     }
 
     @Override

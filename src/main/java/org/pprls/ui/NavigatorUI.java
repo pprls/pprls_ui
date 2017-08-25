@@ -1,5 +1,6 @@
 package org.pprls.ui;
 
+import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.server.VaadinRequest;
@@ -17,6 +18,7 @@ import java.net.MalformedURLException;
 /**
  * Created by kapostolou on 18/8/2017.
  */
+@Theme("mytheme")
 public class NavigatorUI extends UI {
     Navigator navigator;
     public static final String LOGINVIEW = "loginView";
