@@ -10,7 +10,7 @@ import com.vaadin.ui.UI;
 import org.apache.log4j.Logger;
 import org.pprls.ui.views.EmployeeView;
 import org.pprls.ui.views.LoginView;
-import org.pprls.ui.views.ManagerView;
+import org.pprls.ui.views.manager.ManagerView;
 
 import javax.servlet.annotation.WebServlet;
 import java.net.MalformedURLException;

@@ -18,7 +18,6 @@ public class EmployeeView extends VerticalLayout implements View {
         this.addComponent(layout2);
 
         final VerticalLayout layout3 = new VerticalLayout();
-
         final VerticalLayout layout4 = new VerticalLayout();
 
         layout2.addComponent(layout3);

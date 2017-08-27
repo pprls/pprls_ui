@@ -1,4 +1,4 @@
-package org.pprls.ui.views;
+package org.pprls.ui.views.manager;
 
 import com.vaadin.annotations.Theme;
 import com.vaadin.data.Binder;
@@ -8,12 +8,9 @@ import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.ui.*;
 import com.vaadin.ui.components.grid.HeaderCell;
 import com.vaadin.ui.components.grid.HeaderRow;
-import com.vaadin.ui.themes.ValoTheme;
 import org.pprls.ui.model.Item;
-import org.pprls.ui.model.ItemGenerator;
-import org.pprls.ui.views.widgets.AttachmentViewer;
-import org.vaadin.alump.ckeditor.CKEditorConfig;
-import org.vaadin.alump.ckeditor.CKEditorTextField;
+import org.pprls.ui.model.DataSource;
+import org.pprls.ui.views.CreateNewItem;
 
 import java.net.MalformedURLException;
 import java.util.List;
@@ -24,9 +21,11 @@ public class ManagerView extends VerticalLayout implements View {
     private SingleSelect<Item> itemSelection;
 
     public ManagerView() throws MalformedURLException {
+        setMargin(false);
         setSizeFull();
 
         final HorizontalLayout mainLayout = new HorizontalLayout();
+        mainLayout.setMargin(false);
         mainLayout.setSizeFull();
         this.addComponent(mainLayout);
         final VerticalLayout docsLayout = new VerticalLayout();
@@ -38,40 +37,8 @@ public class ManagerView extends VerticalLayout implements View {
         mainLayout.addComponent(docsLayout);
         mainLayout.addComponent(tasksLayout);
 
-        Label messageTitle = new Label("Διαβιβαστικό");
-        messageTitle.setStyleName(ValoTheme.LABEL_H2);
-        // Διαββιβαστικό
-        CKEditorConfig config = new CKEditorConfig();
-        config.useCompactTags();
-        config.disableElementsPath();
-        config.setResizeDir(CKEditorConfig.RESIZE_DIR.HORIZONTAL);
-        config.disableSpellChecker();
-        config.setReadOnly(true);
-        config.setWidth("100%");
-        final CKEditorTextField rtArea = new CKEditorTextField(config);
-        rtArea.setViewWithoutEditor(true);
-        rtArea.setSizeFull();
-
-        final AttachmentViewer attachmentsViewer = new AttachmentViewer();
-        // docsLayout
-        docsLayout.addComponent(messageTitle);
-        docsLayout.addComponent(rtArea);
-        docsLayout.addComponentsAndExpand(attachmentsViewer);
-
-        final HorizontalLayout buttonLayout  = new HorizontalLayout();
-        buttonLayout.setSizeFull();
-        docsLayout.addComponent(buttonLayout);
-        Button buttonDecline = new Button("Απορρίπτω");
-        buttonDecline.setSizeFull();
-        Button buttonAssign = new Button("Αναθέτω/ενεργώ");
-        buttonAssign.setStyleName(ValoTheme.BUTTON_PRIMARY);
-        buttonAssign.setSizeFull();
-        buttonLayout.addComponent(buttonDecline);
-        buttonLayout.addComponent(buttonAssign);
-
-        docsLayout.setExpandRatio(rtArea, 3.0f);
-        docsLayout.setExpandRatio(attachmentsViewer, 6.0f);
-        docsLayout.setExpandRatio(buttonLayout, 1.0f);
+        final AssignView assignView = new AssignView();
+        docsLayout.addComponentsAndExpand(assignView);
 
         // tasksLayout
         Button buttonAssignTask = new Button("Ανάθεση εργασίας στη διεύθυνση");
@@ -79,7 +46,7 @@ public class ManagerView extends VerticalLayout implements View {
         Grid<Item> taskGrid = new Grid<>();
         itemSelection = taskGrid.asSingleSelect();
         taskGrid.setSizeFull();
-        List<Item> items = ItemGenerator.INSTANCE.createList();
+        List<Item> items = DataSource.INSTANCE.getItems();
         ListDataProvider<Item> provider = new ListDataProvider<>(items);
         taskGrid.setDataProvider(provider);
         taskGrid.addColumn(Item::getAction).setCaption("γιά");
@@ -122,28 +89,16 @@ public class ManagerView extends VerticalLayout implements View {
 
         buttonAssignTask.addClickListener(click -> {
             // Create a sub-window and set the content
-            Window subWindow = new Window("Ανάθεση εργασίας στη διεύθυνση");
-            subWindow.setModal(true);
-            VerticalLayout subContent = new VerticalLayout();
-            subWindow.setContent(subContent);
-
-            // Put some components in it
-            subContent.addComponent(new Label("Meatball sub"));
-            subContent.addComponent(new Button("Awlright"));
-
-            // Center it in the browser window
-            subWindow.center();
-
-            // Open it in the UI
-            UI.getCurrent().addWindow(subWindow);
+            CreateNewItem createNewItem = new CreateNewItem();
+            UI.getCurrent().addWindow(createNewItem);
         });
 
         // when i change selection on grid  this is what I do
         final Binder<Item> itemBinder = new Binder<>(Item.class);
-        itemBinder.bind(rtArea, "instructions");
+        itemBinder.bind(assignView.getRtArea(), "instructions");
         itemSelection.addValueChangeListener(event -> {
             itemBinder.setBean(itemSelection.getValue());
-            if(!itemSelection.isEmpty()) attachmentsViewer.setAttachments(itemSelection.getValue().getAttachments()); // the if is there to cover the deselect
+            if(!itemSelection.isEmpty()) assignView.setAttachments(itemSelection.getValue().getAttachments()); // the if is there to cover the deselect
         });
     }
 
