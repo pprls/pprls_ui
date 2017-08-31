@@ -14159,6 +14159,30 @@ div.v-layout.v-horizontal.v-widget {
 	overflow: hidden;
 }
 
+.mytheme .progress {
+	height: 1.5em;
+	width: 100%;
+	background-color: #c9c9c9;
+	position: relative;
+	text-align: right;
+}
+
+.mytheme .progress:before {
+	content: attr(data-label);
+	font-size: 0.8em;
+	position: absolute;
+	text-align: center;
+	top: 5px;
+	left: 0;
+	right: 0;
+}
+
+.mytheme .progress .value {
+	background-color: #7cc4ff;
+	display: inline-block;
+	height: 100%;
+}
+
 @media screen and (min-resolution: 2dppx) {
 	.toolbarButton::before {
 		-webkit-transform: scale(0.5);

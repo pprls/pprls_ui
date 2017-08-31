@@ -37,8 +37,4 @@ public class Employee {
     public void setFathers(String fathers) {
         this.fathers = fathers;
     }
-
-    public String getFullName(){
-        return name+" "+last;
-    }
 }

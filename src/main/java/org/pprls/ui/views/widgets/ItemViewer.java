@@ -48,6 +48,8 @@ public class ItemViewer extends VerticalLayout {
 
     public void setAttachments(List<Attachment> attachments) {
         attachmentsViewer.setAttachments(attachments);
+        if(attachments.isEmpty()) attachmentsViewer.setEnabled(false);
+        else attachmentsViewer.setEnabled(true);
     }
 }
 

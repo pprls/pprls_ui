@@ -10,6 +10,7 @@ import org.pprls.ui.model.Attachment;
 import org.vaadin.alump.ckeditor.CKEditorConfig;
 import org.vaadin.alump.ckeditor.CKEditorTextField;
 
+import javax.validation.constraints.AssertTrue;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,6 +24,8 @@ public class AttachmentViewer extends VerticalLayout{
     private int index = 0;
     private CKEditorTextField rtArea = new CKEditorTextField();
     private WTPdfViewer pdfArea = new WTPdfViewer ();
+    private final Button prev = new Button();
+    private final Button next = new Button();
 
     public AttachmentViewer(){
 
@@ -42,9 +45,7 @@ public class AttachmentViewer extends VerticalLayout{
         pdfArea.setVisible(true);
         pdfArea.setSizeFull();
 
-        Button prev = new Button();
         prev.setIcon(VaadinIcons.ARROW_CIRCLE_LEFT);
-        Button next = new Button();
         next.setIcon(VaadinIcons.ARROW_CIRCLE_RIGHT);
 
         HorizontalLayout navLayout = new HorizontalLayout();
@@ -64,7 +65,8 @@ public class AttachmentViewer extends VerticalLayout{
         this.addComponentsAndExpand(pdfArea);
         this.addComponent(navLayout);
 
-
+        prev.setEnabled(false);
+        next.setEnabled(false);
         // Next Prev click listeners
         prev.addClickListener(click -> showAttachment(prev()));
         next.addClickListener(click -> showAttachment(next()));
@@ -105,8 +107,15 @@ public class AttachmentViewer extends VerticalLayout{
 
     public void setAttachments(List<Attachment> attachments){
         index = 0;
-        if(!attachments.isEmpty())  this.attachments = attachments;
+        this.attachments = attachments;
         showAttachment(index);
-        showAttachment(index);
+    }
+
+    public void setEnabled(boolean flag){
+        super.setEnabled(flag);
+        pdfArea.setEnabled(flag);
+        rtArea.setEnabled(flag);
+        next.setEnabled(flag);
+        prev.setEnabled(flag);
     }
 }
