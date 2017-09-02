@@ -21,18 +21,17 @@ public class CreateNewItem extends Window {
         setContent(subContent);
 
         // Put some components in it
-        Label actionPickLabel = new Label("Ενέργεια ");
-        ComboBox<String> actionComboBox =  new ComboBox();
-        actionComboBox.setItems(new String[]{"Ενέργεια", "Αρχείο"});
-        HorizontalLayout firstLine = new HorizontalLayout(actionPickLabel, actionComboBox);
-        Label employeePickLabel = new Label("Διαλεξε υπάλληλο που θα αναλάβει την εργασία");
+        Label employeePickLabel = new Label("Διάλεξε υπάλληλο που θα αναλάβει την εργασία");
         ComboBox<Employee> employeeComboBox =  new ComboBox();
         employeeComboBox.setItemCaptionGenerator(p -> p.getLast() + " "+ p.getName());
         employeeComboBox.setItems(DataSource.INSTANCE.getEmployees());
         TextField subject = new TextField();
         subject.setWidth("100%");
         DateField deadLine = new DateField("Όρισε ώς πότε θα πρέπει να την έχει τελειώσει");
-        deadLine.setWidth("100%");
+        Label actionPickLabel = new Label("Ενέργεια ");
+        ComboBox<String> actionComboBox =  new ComboBox();
+        actionComboBox.setItems(new String[]{"Ενέργεια", "Αρχείο"});
+        HorizontalLayout actionDate = new HorizontalLayout(actionPickLabel, actionComboBox, deadLine);
         HorizontalLayout secondLine = new HorizontalLayout(employeePickLabel, employeeComboBox);
         CKEditorTextField rtArea;
         // Διαββιβαστικό
@@ -46,10 +45,9 @@ public class CreateNewItem extends Window {
         Button button = new Button("Ανάθεσε");
         button.addClickListener(click -> close());
 
-        subContent.addComponent(firstLine);
         subContent.addComponent(secondLine);
         subContent.addComponent(subject);
-        subContent.addComponent(deadLine);
+        subContent.addComponent(actionDate);
         subContent.addComponent(rtArea);
         subContent.addComponent(button);
 

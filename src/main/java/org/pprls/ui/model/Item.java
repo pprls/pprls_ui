@@ -1,15 +1,14 @@
 package org.pprls.ui.model;
 
-import com.vaadin.ui.renderers.HtmlRenderer;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.net.URL;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by kapostolou on 18/8/2017.
@@ -96,16 +95,6 @@ public class Item {
 
     public List<Attachment> getAttachments() { return attachments; }
 
-    public String getHolderWithProgress(){
-        String result;
-        result = "<div class=\"progress\"   data-label=\"" ;
-        result += getHolder();
-        result += "\">  <span class=\"value\"  style=\"background-color: ";
-        String color = "Chartreuse";
-        if(LocalDate.now().isEqual(getDeadLine()) ) color = "Gold";
-        if(LocalDate.now().isAfter(getDeadLine()) ) color = "Crimson";
-        result += color+"; width:"+getProgress()*100+"%;\"></span>\n</div>";
-        return result;
-    }
+
 
 }

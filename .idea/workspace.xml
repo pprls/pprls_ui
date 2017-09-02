@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/ManagerView.java" line="63" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="c5cccf52-5dc9-424a-9d31-44eff95dd36f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.pprls.ui.iml" afterPath="$PROJECT_DIR$/org.pprls.ui.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/DataSource.java" afterPath="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/DataSource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/Employee.java" afterPath="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/Employee.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/Item.java" afterPath="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/Item.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/CreateNewItem.java" afterPath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/CreateNewItem.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/ManagerView.java" afterPath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/ManagerView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/widgets/AttachmentViewer.java" afterPath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/widgets/AttachmentViewer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/widgets/ItemViewer.java" afterPath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/widgets/ItemViewer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss" afterPath="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.css" afterPath="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.css" />
     </list>
@@ -34,8 +25,8 @@
       <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/model/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="105" column="68" lean-forward="false" selection-start-line="105" selection-start-column="68" selection-end-line="105" selection-end-column="68" />
+            <state relative-caret-position="1334">
+              <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,21 +34,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataSource.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/model/DataSource.java">
+      <file leaf-file-name="ManagerView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/ManagerView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="34" column="118" lean-forward="false" selection-start-line="34" selection-start-column="118" selection-end-line="34" selection-end-column="118" />
+            <state relative-caret-position="-319">
+              <caret line="40" column="25" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4029#4030#0" expanded="true" />
-                <element signature="e#4056#4057#0" expanded="true" />
-                <element signature="e#4094#4095#0" expanded="true" />
-                <element signature="e#4126#4127#0" expanded="true" />
-                <element signature="e#4162#4163#0" expanded="true" />
-                <element signature="e#4193#4194#0" expanded="true" />
-                <element signature="e#4341#4342#0" expanded="true" />
-                <element signature="e#4377#4378#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,23 +49,11 @@
       <file leaf-file-name="CreateNewItem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/CreateNewItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="907">
-              <caret line="60" column="56" lean-forward="false" selection-start-line="60" selection-start-column="56" selection-end-line="60" selection-end-column="56" />
+            <state relative-caret-position="-381">
+              <caret line="26" column="70" lean-forward="true" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3186#3187#0" expanded="true" />
-                <element signature="e#3216#3217#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -90,41 +61,8 @@
       <file leaf-file-name="mytheme.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Binder.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/8.0.6/vaadin-server-8.0.6.jar!/com/vaadin/data/Binder.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="719" column="40" lean-forward="false" selection-start-line="719" selection-start-column="40" selection-end-line="719" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AssignView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/AssignView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="28" />
-              <folding>
-                <element signature="e#1245#1246#0" expanded="true" />
-                <element signature="e#1299#1300#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AttachmentViewer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/widgets/AttachmentViewer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="41" column="31" lean-forward="false" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -136,6 +74,20 @@
             <state relative-caret-position="136">
               <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="14" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemGrid.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/widgets/ItemGrid.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="75" column="36" lean-forward="false" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1423#1424#0" expanded="true" />
+                <element signature="e#1462#1463#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,6 +108,7 @@
       <find>log4</find>
       <find>package org\.pprls\.ui\.model\;\n\nimport java\.net\.MalformedURLException\;\nimport java\.net\.URL\;\nimport java\.time\.LocalDate\;\nimport java\.util\.ArrayList\;\nimport java\.util\.List\;\n\nimport static org\.pprls\.ui\.model\.AttachmentType\.PDF\;\nimport static org\.pprls\.ui\.model\.AttachmentType\.RTF\;\n\npublic enum DataSource \{\n    INSTANCE\;\n\n    private  List\&lt;Item\&gt; itemList \= new ArrayList\&lt;Item\&gt;\(\)\;\n    private  List\&lt;Employee\&gt; employeeslist \= new ArrayList\(\)\;\n\n    private DataSource\(\) throws \{\n        try \{\n            Item newItem \= new Item\(\&quot;Ενέργεια\&quot;\, \&quot;Σέκερης Γεώργιος\&quot;\, LocalDate\.parse\(\&quot;2019\-01\-01\&quot;\)\, \&quot;Διοικητική πράξη Α\&quot;\, LocalDate\.parse\(\&quot;2019\-01\-01\&quot;\)\)\;\n            newItem\.setInstructions\(\&quot;\&lt;h2\&gt;Διοικητική πράξη \&lt;mark\&gt;Α\&lt;\/mark\&gt;\&lt;\/h2\&gt;\&quot;\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\&lt;URL\&gt;\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0211\.pdf\&quot;\)\)\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\&lt;String\&gt;\(RTF\, \&quot;Sample \&lt;strong\&gt;text\&lt;\/strong\&gt;\&quot;\)\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\&lt;URL\&gt;\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0213\.pdf\&quot;\)\)\)\;\n            itemList\.add\(newItem\)\;\n            newItem \= new Item\(\&quot;Ενέργεια\&quot;\, \&quot;Ουζουνίδης Νικόλαος\&quot;\, LocalDate\.parse\(\&quot;2019\-01\-02\&quot;\)\, \&quot;Διοικητική πράξη Β\&quot;\, LocalDate\.parse\(\&quot;2019\-01\-02\&quot;\)\)\;\n            newItem\.setInstructions\(\&quot;\&lt;h2\&gt;Διοικητική πράξη \&lt;mark\&gt;Β\&lt;\/mark\&gt;\&lt;\/h2\&gt;\&quot;\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\&lt;URL\&gt;\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0208\.pdf\&quot;\)\)\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\&lt;String\&gt;\(RTF\, \&quot;Sample \&lt;strong\&gt;text\&lt;\/strong\&gt;\&quot;\)\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\&lt;URL\&gt;\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color210\.pdf\&quot;\)\)\)\;\n            itemList\.add\(newItem\)\;\n            newItem \= new Item\(\&quot;Ενέργεια\&quot;\, \&quot;Λεοντίδης Λέων\&quot;\, LocalDate\.parse\(\&quot;2019\-01\-03\&quot;\)\, \&quot;Διοικητική πράξη Γ\&quot;\, LocalDate\.parse\(\&quot;2019\-01\-03\&quot;\)\)\;\n            newItem\.setInstructions\(\&quot;\&lt;h2\&gt;Διοικητική πράξη \&lt;mark\&gt;Γ\&lt;\/mark\&gt;\&lt;\/h2\&gt;\&quot;\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\&lt;URL\&gt;\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0211\.pdf\&quot;\)\)\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\&lt;String\&gt;\(RTF\, \&quot;Sample \&lt;strong\&gt;text\&lt;\/strong\&gt;\&quot;\)\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\&lt;URL\&gt;\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0213\.pdf\&quot;\)\)\)\;\n            itemList\.add\(newItem\)\;\n            newItem \= new Item\(\&quot;Ενέργεια\&quot;\, \&quot;Χριστοδούλου Θεοδόσιος\&quot;\, LocalDate\.parse\(\&quot;2019\-01\-04\&quot;\)\, \&quot;Διοικητική πράξη Δ\&quot;\, LocalDate\.parse\(\&quot;2019\-01\-04\&quot;\)\)\;\n            newItem\.setInstructions\(\&quot;\&lt;h2\&gt;Διοικητική πράξη \&lt;mark\&gt;Δ\&lt;\/mark\&gt;\&lt;\/h2\&gt;\&quot;\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0208\.pdf\&quot;\)\)\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0209\.pdf\&quot;\)\)\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0210\.pdf\&quot;\)\)\)\;\n            itemList\.add\(newItem\)\;\n            newItem \= new Item\(\&quot;Ενέργεια\&quot;\, \&quot;Στανέλλος Σπυρίδων Ιωάννου\&quot;\, LocalDate\.parse\(\&quot;2019\-01\-05\&quot;\)\, \&quot;Διοικητική πράξη Ε\&quot;\, LocalDate\.parse\(\&quot;2019\-01\-05\&quot;\)\)\;\n            newItem\.setInstructions\(\&quot;\&lt;h2\&gt;Διοικητική πράξη \&lt;mark\&gt;Ε\&lt;\/mark\&gt;\&lt;\/h2\&gt;\&quot;\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0211\.pdf\&quot;\)\)\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0212\.pdf\&quot;\)\)\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0213\.pdf\&quot;\)\)\)\;\n            itemList\.add\(newItem\)\;\n        \}catch\(Exception ex\)\{\n            \n        \}\n\n        employeeslist\.add\(new Employee\(\&quot;Αποστόλου\&quot;\, \&quot;Κωνσταντίνος\&quot;\, \&quot;Νικήτας\&quot;\)\)\;\n        employeeslist\.add\(new Employee\(\&quot;Αποστόλου\&quot;\, \&quot;Ιουλία\&quot;\, \&quot;Κωμσταντίνου\&quot;\)\)\;\n        employeeslist\.add\(new Employee\(\&quot;Αποστόλου\&quot;\, \&quot;Μανώλης\&quot;\, \&quot;Κωνστντίνου\&quot;\)\)\;\n        employeeslist\.add\(new Employee\(\&quot;Παπαμιχαήλ\&quot;\,\&quot;Αννέτα\&quot;\,\&quot;Εμμανουήλ\&quot;\)\)\;\n        \n    \}\n\n    public List\&lt;Item\&gt; getItems\(\) throws MalformedURLException \{\n        return itemList\;\n    \}\n\n    public void save\(Item newItem\)\{\n        itemList\.add\(newItem\)\;\n    \}\n\n    public List\&lt;Employee\&gt; getEmployees\(\)\{\n        return employeeslist\;\n    \}\n\}\n</find>
       <find>selectedItem</find>
+      <find>subjectFilter</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -197,12 +150,13 @@
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/widgets/AttachmentViewer.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/converters/StringToNameConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/converters/SelectionToItemConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/CreateNewItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/Renderers/ProgressRenderer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/DataSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/CreateNewItem.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss" />
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/ManagerView.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/Item.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/DataSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/widgets/ItemGrid.java" />
       </list>
     </option>
   </component>
@@ -234,6 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -361,7 +316,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -569,7 +523,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26589242" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26894864" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.49288255" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -620,30 +574,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/EmployeeView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="86" column="11" lean-forward="false" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" column="21" lean-forward="false" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/model/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/LoginView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -657,7 +587,6 @@
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
-            <marker date="1503986345242" expanded="true" signature="1843:1849" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -668,8 +597,6 @@
           <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4982#4983#0" expanded="true" />
-            <element signature="e#5040#5041#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -711,7 +638,6 @@
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
-            <marker date="1503986345242" expanded="true" signature="1843:1849" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -722,8 +648,6 @@
           <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4982#4983#0" expanded="true" />
-            <element signature="e#5040#5041#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -797,7 +721,6 @@
           <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="false" />
-            <marker date="1503986345242" expanded="true" signature="1843:1849" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -835,10 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="27" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#339#340#0" expanded="false" />
-            <element signature="e#371#372#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -846,7 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="8" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -854,10 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="e#413#414#0" expanded="false" />
-            <element signature="e#445#446#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -865,9 +779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#923#924#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -875,25 +786,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-          <folding>
-            <element signature="e#4940#4941#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/converters/SelectionToItemConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="83" lean-forward="false" selection-start-line="5" selection-start-column="83" selection-end-line="5" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/converters/SelectionToItemConverter.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/8.0.6/vaadin-server-8.0.6.jar!/com/vaadin/data/SimpleResult.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -901,13 +801,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/8.0.6/vaadin-server-8.0.6.jar!/com/vaadin/data/Binder.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
+        <state relative-caret-position="10863">
           <caret line="719" column="40" lean-forward="false" selection-start-line="719" selection-start-column="40" selection-end-line="719" selection-end-column="40" />
           <folding />
         </state>
@@ -915,11 +814,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/AssignView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="28" />
+        <state relative-caret-position="425">
+          <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="28" />
           <folding>
-            <element signature="e#1245#1246#0" expanded="true" />
-            <element signature="e#1299#1300#0" expanded="true" />
+            <marker date="1504245119654" expanded="true" signature="490:1093" ph="{...}" />
+            <marker date="1504245119654" expanded="false" signature="1135:1146" ph=" { " />
+            <marker date="1504245119654" expanded="false" signature="1176:1182" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/widgets/AttachmentViewer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/Renderers/ProgressRenderer.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/model/DataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="34" column="118" lean-forward="false" selection-start-line="34" selection-start-column="118" selection-end-line="34" selection-end-column="118" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="41" column="31" lean-forward="false" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/CreateNewItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-381">
+          <caret line="26" column="70" lean-forward="true" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -932,86 +885,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/widgets/AttachmentViewer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/Renderers/ProgressRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/ManagerView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="56" column="39" lean-forward="false" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+        <state relative-caret-position="-319">
+          <caret line="40" column="25" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4982#4983#0" expanded="true" />
-            <element signature="e#5040#5041#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/CreateNewItem.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/time/LocalDate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="907">
-          <caret line="60" column="56" lean-forward="false" selection-start-line="60" selection-start-column="56" selection-end-line="60" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3186#3187#0" expanded="true" />
-            <element signature="e#3216#3217#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="179">
+          <caret line="1688" column="18" lean-forward="false" selection-start-line="1688" selection-start-column="18" selection-end-line="1688" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/model/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="105" column="68" lean-forward="false" selection-start-line="105" selection-start-column="68" selection-end-line="105" selection-end-column="68" />
+        <state relative-caret-position="1334">
+          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/model/DataSource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/widgets/ItemGrid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="34" column="118" lean-forward="false" selection-start-line="34" selection-start-column="118" selection-end-line="34" selection-end-column="118" />
+        <state relative-caret-position="327">
+          <caret line="75" column="36" lean-forward="false" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4029#4030#0" expanded="true" />
-            <element signature="e#4056#4057#0" expanded="true" />
-            <element signature="e#4094#4095#0" expanded="true" />
-            <element signature="e#4126#4127#0" expanded="true" />
-            <element signature="e#4162#4163#0" expanded="true" />
-            <element signature="e#4193#4194#0" expanded="true" />
-            <element signature="e#4341#4342#0" expanded="true" />
-            <element signature="e#4377#4378#0" expanded="true" />
+            <element signature="e#1423#1424#0" expanded="true" />
+            <element signature="e#1462#1463#0" expanded="true" />
           </folding>
         </state>
       </provider>
