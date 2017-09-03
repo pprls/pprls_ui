@@ -26,6 +26,7 @@ public class Item {
     private String instructions;
     private Double progress;
     private List<Attachment> attachments;
+    private boolean pending;
 
     public Item(){
         this.action = "";
@@ -35,6 +36,7 @@ public class Item {
         this.progress = 0.0;
         this.deadLine = LocalDate.ofEpochDay(0);
         this.attachments = new ArrayList<Attachment>();
+        this.pending=true;
     }
 
     public Item(String action, String holder, LocalDate accept, String subject, Double progress, LocalDate deadLine) {
@@ -45,6 +47,7 @@ public class Item {
         this.deadLine = deadLine;
         this.progress = progress;
         this.attachments = new ArrayList<Attachment>();
+        this.pending=true;
     }
 
     public String getAction() {
@@ -95,6 +98,7 @@ public class Item {
 
     public List<Attachment> getAttachments() { return attachments; }
 
+    public boolean isPending() { return pending;  }
 
-
+    public void setPending(boolean pending) { this.pending = pending; }
 }

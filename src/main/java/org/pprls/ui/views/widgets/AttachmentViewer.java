@@ -3,6 +3,7 @@ package org.pprls.ui.views.widgets;
 import com.vaadin.icons.VaadinIcons;
 import com.vaadin.server.ClientConnector;
 import com.vaadin.server.StreamResource;
+import com.vaadin.server.ThemeResource;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
 import com.whitestein.vaadin.widgets.wtpdfviewer.WTPdfViewer;
@@ -17,7 +18,7 @@ import java.io.InputStream;
 import java.net.URL;
 import java.util.List;
 
-public class AttachmentViewer extends VerticalLayout{
+public class AttachmentViewer extends Panel{
 
     private List<Attachment> attachments;
 
@@ -28,6 +29,7 @@ public class AttachmentViewer extends VerticalLayout{
     private final Button next = new Button();
 
     public AttachmentViewer(){
+        super("Συνημμένα");
 
         final CKEditorConfig config = new CKEditorConfig();
         config.useCompactTags();
@@ -54,16 +56,15 @@ public class AttachmentViewer extends VerticalLayout{
         navLayout.addComponents(prev);
         navLayout.addComponents(next);
 
-        this.addStyleName(ValoTheme.LAYOUT_COMPONENT_GROUP);
-        this.setMargin(false);
-        this.setSizeFull();
+        VerticalLayout layout = new VerticalLayout();
+        layout.addComponentsAndExpand(rtArea);
+        layout.addComponentsAndExpand(pdfArea);
+        layout.addComponent(navLayout);
 
-        Label attachedTitle = new Label("Συνημμένα");
-        attachedTitle.setStyleName(ValoTheme.LABEL_H2);
-        this.addComponents(attachedTitle);
-        this.addComponentsAndExpand(rtArea);
-        this.addComponentsAndExpand(pdfArea);
-        this.addComponent(navLayout);
+        setContent(layout);
+        //this.addStyleName(ValoTheme.LAYOUT_COMPONENT_GROUP);
+        //this.setMargin(false);
+        //this.setSizeFull();
 
         prev.setEnabled(false);
         next.setEnabled(false);
@@ -74,6 +75,15 @@ public class AttachmentViewer extends VerticalLayout{
 
     private void showAttachment( int i) {
         if(!attachments.isEmpty()) {
+            if(attachments.get(i).isSigned()) {
+                this.setIcon(new ThemeResource("img/signature.png"));
+                this.setDescription(attachments.get(i).getSignaturesInfo());
+            }
+            else {
+                this.setIcon(null);
+                this.setDescription(null);
+            }
+
             switch (attachments.get(i).getType()) {
                 case PDF:
                     Attachment<URL> attachmentU = attachments.get(i);

@@ -7,7 +7,6 @@ import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.ui.*;
 import org.pprls.ui.model.Item;
 import org.pprls.ui.views.CreateNewItem;
-import org.pprls.ui.views.widgets.ItemGrid;
 
 import java.net.MalformedURLException;
 import java.util.ArrayList;
@@ -32,51 +31,42 @@ public class ManagerView extends VerticalLayout implements View {
         mainLayout.addComponent(docsLayout);
         mainLayout.addComponent(tasksLayout);
 
-        final AssignView assignView = new AssignView();
-        docsLayout.addComponentsAndExpand(assignView);
+        final ItemDetailsPanel itemDetailsPanel = new ItemDetailsPanel();
+        docsLayout.addComponentsAndExpand(itemDetailsPanel);
 
         // tasksLayout
         Button buttonAssignTask = new Button("Ανάθεση εργασίας στη διεύθυνση");
         buttonAssignTask.setWidth("100%");
-        ItemGrid itemGrid = new ItemGrid();
-
-        Button pendingButton = new Button("Εκκρεμότητες Διεύθυνσης");
-        pendingButton.setWidth("100%");
-        Button pastButton = new Button("Παρελθόντα Ολοκληρωμένα");
-        pastButton.setWidth("100%");
+        ItemRowsPanel itemRowsPanel = new ItemRowsPanel();
         Button searchCaseButton = new Button("Αναζήτηση Υπόθεσης");
         searchCaseButton.setWidth("100%");
         Button protocolButton = new Button("Πρωτόκολλο");
         protocolButton.setWidth("100%");
 
         tasksLayout.addComponent(buttonAssignTask);
-        tasksLayout.addComponent(itemGrid);
-        tasksLayout.addComponent(pendingButton);
-        tasksLayout.addComponent(pastButton);
+        tasksLayout.addComponentsAndExpand(itemRowsPanel);
         tasksLayout.addComponent(searchCaseButton);
         tasksLayout.addComponent(protocolButton);
-
-        tasksLayout.setExpandRatio(itemGrid, 1f);
-
+        //tasksLayout.setExpandRatio(itemGrid, 1f);
 
         buttonAssignTask.addClickListener(click -> {
             // Create a sub-window and set the content
             CreateNewItem createNewItem = new CreateNewItem();
             UI.getCurrent().addWindow(createNewItem);
-            createNewItem.addCloseListener(event -> itemGrid.updateItemsList(createNewItem.getItem()));
+            createNewItem.addCloseListener(event -> itemRowsPanel.updateItemsList(createNewItem.getItem()));
         });
 
         final Binder<Item> itemBinder = new Binder<>(Item.class);
-        itemBinder.forField(assignView.getRtArea())
+        itemBinder.forField(itemDetailsPanel.getRtArea())
                 .bind("instructions");
 
         // when I change selection on grid  this is what I do
-        SingleSelect<Item> itemSelection = itemGrid.getSelection();
-        itemGrid.getSelection().addValueChangeListener(event -> {
+        SingleSelect<Item> itemSelection = itemRowsPanel.getSelection();
+        itemRowsPanel.getSelection().addValueChangeListener(event -> {
             itemBinder.setBean(itemSelection.getValue());
             if (!itemSelection.isEmpty())
-                assignView.setAttachments(itemSelection.getValue().getAttachments()); // the if is there to cover the deselect
-            else assignView.setAttachments(new ArrayList<>());
+                itemDetailsPanel.setAttachments(itemSelection.getValue().getAttachments()); // the if is there to cover the deselect
+            else itemDetailsPanel.setAttachments(new ArrayList<>());
         });
     }
 

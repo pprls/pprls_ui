@@ -11,13 +11,14 @@ import org.vaadin.alump.ckeditor.CKEditorTextField;
 
 import java.util.List;
 
-public class AssignView extends VerticalLayout {
+public class ItemDetailsPanel extends VerticalLayout {
 
     private final ItemViewer itemViewer;
 
-    public AssignView() {
+    public ItemDetailsPanel() {
+        setMargin(false);
         itemViewer = new ItemViewer();
-        this.addComponentsAndExpand(itemViewer);
+        addComponentsAndExpand(itemViewer);
 
         final HorizontalLayout buttonLayout  = new HorizontalLayout();
         buttonLayout.setWidth("100%");
@@ -29,7 +30,7 @@ public class AssignView extends VerticalLayout {
         buttonLayout.addComponent(buttonDecline);
         buttonLayout.addComponent(buttonAssign);
 
-        this.addComponent(buttonLayout);
+        addComponent(buttonLayout);
     }
 
     public CKEditorTextField getRtArea() {

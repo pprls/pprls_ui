@@ -2,9 +2,10 @@ package org.pprls.ui.views;
 
 import com.vaadin.data.Binder;
 import com.vaadin.ui.*;
-import org.pprls.ui.model.DataSource;
+import org.pprls.ui.model.ItemRepository;
 import org.pprls.ui.model.Employee;
 import org.pprls.ui.model.Item;
+import org.pprls.ui.model.SubjectRepository;
 import org.vaadin.alump.ckeditor.CKEditorConfig;
 import org.vaadin.alump.ckeditor.CKEditorTextField;
 
@@ -22,9 +23,9 @@ public class CreateNewItem extends Window {
 
         // Put some components in it
         Label employeePickLabel = new Label("Διάλεξε υπάλληλο που θα αναλάβει την εργασία");
-        ComboBox<Employee> employeeComboBox =  new ComboBox();
-        employeeComboBox.setItemCaptionGenerator(p -> p.getLast() + " "+ p.getName());
-        employeeComboBox.setItems(DataSource.INSTANCE.getEmployees());
+        ComboBox<Employee> subjectCombobox =  new ComboBox();
+        subjectCombobox.setItemCaptionGenerator(p -> p.getLast() + " "+ p.getName());
+        subjectCombobox.setItems(SubjectRepository.INSTANCE.getSubjects());
         TextField subject = new TextField();
         subject.setWidth("100%");
         DateField deadLine = new DateField("Όρισε ώς πότε θα πρέπει να την έχει τελειώσει");
@@ -32,7 +33,7 @@ public class CreateNewItem extends Window {
         ComboBox<String> actionComboBox =  new ComboBox();
         actionComboBox.setItems(new String[]{"Ενέργεια", "Αρχείο"});
         HorizontalLayout actionDate = new HorizontalLayout(actionPickLabel, actionComboBox, deadLine);
-        HorizontalLayout secondLine = new HorizontalLayout(employeePickLabel, employeeComboBox);
+        HorizontalLayout secondLine = new HorizontalLayout(employeePickLabel, subjectCombobox);
         CKEditorTextField rtArea;
         // Διαββιβαστικό
         CKEditorConfig config = new CKEditorConfig();
@@ -59,7 +60,7 @@ public class CreateNewItem extends Window {
             newItem.setAction(actionSelection.toString());
         });
 
-        employeeComboBox.addSelectionListener(event -> {
+        subjectCombobox.addSelectionListener(event -> {
             Employee employeeSelection = event.getValue();
             newItem.setHolder(employeeSelection.getLast()+" "+employeeSelection.getName());
         });
