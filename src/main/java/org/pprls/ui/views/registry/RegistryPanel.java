@@ -1,8 +1,15 @@
 package org.pprls.ui.views.registry;
 
+import com.vaadin.server.ThemeResource;
 import com.vaadin.shared.ui.datefield.DateResolution;
 import com.vaadin.ui.*;
+import com.vaadin.ui.renderers.HtmlRenderer;
+import com.vaadin.ui.renderers.ImageRenderer;
+import org.pprls.ui.model.Item;
+import org.pprls.ui.model.RegistryRecord;
 import org.pprls.ui.model.RegistryRepository;
+
+import java.time.format.DateTimeFormatter;
 
 public class RegistryPanel extends VerticalLayout {
 
@@ -24,7 +31,7 @@ public class RegistryPanel extends VerticalLayout {
     private final TextField correspondantRegistryNumber;
     private final DateField correspondantRegistryDate;
     private final Button searchButton;
-    private final Grid results;
+    private final Grid<RegistryRecord> results;
 
     public RegistryPanel() {
         setMargin(false);
@@ -65,9 +72,28 @@ public class RegistryPanel extends VerticalLayout {
         fifthline.addComponentsAndExpand(classification, correspondantRegistryNumber, correspondantRegistryDate, searchButton);
         fifthline.setComponentAlignment(searchButton, Alignment.BOTTOM_CENTER);
 
-        results = new Grid("Αποστελέσματα");
-        results.setWidth("100%");
+        results = new Grid<>("Αποστελέσματα");
+        Grid.Column<RegistryRecord, ThemeResource> imageColumn = results.addColumn(
+                p -> new ThemeResource("img/"+p.getDirection()+".png"),
+                new ImageRenderer());
+        results.addColumn(RegistryRecord::getRegistryNumber).setCaption("Αρ. Πρωτ.").setId("registryNumber");
+        results.addColumn(RegistryRecord::getRegistryDate).setCaption("Ημ/νία").setId("registryDate");
+        results.addColumn(RegistryRecord::getYear).setCaption("Έτος").setId("year");
+        results.addColumn(RegistryRecord::getDescription).setCaption("Θέμα").setId("subject");
+        results.addColumn(RegistryRecord::getFrom).setCaption("Από").setId("from");
+        results.addColumn(RegistryRecord::getTo).setCaption("Έως").setId("to");
+        results.setSizeFull();
         results.setItems(RegistryRepository.INSTANCE.getRegistryRecords());
+        results.setFrozenColumnCount(4);
         addComponentsAndExpand(results);
+
+        searchButton.addClickListener(click -> {
+            String query = "REGNUMBER="+registryNumber.getValue();
+            query += "&YEAR="+year.getValue();
+            query += "&FROM="+from.getValue().format(DateTimeFormatter.ofPattern("dd-mm-yyyy"));
+            query += "&TO="+to.getValue().format(DateTimeFormatter.ofPattern("dd-mm-yyyy"));
+            query += "&KEYWORDS="+keywords.getValue();
+            RegistryRepository.INSTANCE.getRegistryRecords(query);
+        });
     }
 }

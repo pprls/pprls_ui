@@ -1,6 +1,16 @@
 package org.pprls.ui.model;
 
 public enum Direction {
-    INCOMING,
-    OUTGOING;
+    INCOMING{
+        @Override
+        public String toString() {
+            return "incoming";
+        }
+    },
+    OUTGOING{
+        @Override
+        public String toString() {
+            return "outgoing";
+        }
+    }
 }
