@@ -39,7 +39,6 @@ public class AttachmentViewer extends Panel{
         config.setReadOnly(true);
         config.setWidth("100%");
         rtArea.setConfig(config);
-        rtArea.setViewWithoutEditor(true);
         rtArea.setSizeFull();
         rtArea.setVisible(false);
 

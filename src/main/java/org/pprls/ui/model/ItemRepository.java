@@ -47,8 +47,8 @@ public enum ItemRepository {
             newItem.getAttachments().add(new Attachment(PDF, new URL("file:///N:/scanner/Color0212.pdf"), false));
             newItem.getAttachments().add(new Attachment(PDF, new URL("file:///N:/scanner/Color0213.pdf"), true));
             itemList.add(newItem);
-            newItem = new Item("Ενέργεια", "Αθανάσιος Τσακάλωφ", LocalDate.parse("2019-01-05"), "Διοικητική πράξη Ε", 0.15, LocalDate.parse("2019-01-05"));
-            newItem.setInstructions("<h2>Διοικητική πράξη <mark>Ε</mark></h2>");
+            newItem = new Item("Ενέργεια", "Αθανάσιος Τσακάλωφ", LocalDate.parse("2019-01-05"), "Διοικητική πράξη Z", 0.15, LocalDate.parse("2019-01-05"));
+            newItem.setInstructions("<h2>Διοικητική πράξη <mark>Ζ</mark></h2>");
             newItem.getAttachments().add(new Attachment(PDF, new URL("file:///N:/scanner/Color0211.pdf"), true));
             newItem.getAttachments().add(new Attachment(PDF, new URL("file:///N:/scanner/Color0212.pdf"), false));
             newItem.getAttachments().add(new Attachment(PDF, new URL("file:///N:/scanner/Color0213.pdf"), true));

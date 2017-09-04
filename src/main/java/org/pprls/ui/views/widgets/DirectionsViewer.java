@@ -31,7 +31,7 @@ public class DirectionsViewer extends Panel {
         config.setReadOnly(true);
         config.setWidth("100%");
         rtArea = new CKEditorTextField(config);
-        rtArea.setViewWithoutEditor(true);
+        //rtArea.setViewWithoutEditor(true);
         layout.addComponent(rtArea);
 
         setContent(layout);

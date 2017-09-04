@@ -65,7 +65,7 @@ public class ItemRowsPanel extends Panel {
 
     private void setupFilters(){
         HeaderRow clearfilterRow = grid.prependHeaderRow();
-        Button clear = new Button("clear filter");
+        Button clear = new Button("Εκαθάριση φίλτρων");
         clear.setStyleName(ValoTheme.BUTTON_LINK);
         clearfilterRow.getCell("subject").setComponent(clear);
         HeaderRow filterRow = grid.appendHeaderRow();

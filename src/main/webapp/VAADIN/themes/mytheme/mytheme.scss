@@ -41,6 +41,7 @@
       width: 100%;
       background-color: #c7c7c7;
       position: relative;
+      border-radius: 25px;
       text-align: right;
     }
     .progress:before {
@@ -48,6 +49,7 @@
       font-size: 0.8em;
       position: absolute;
       text-align: center;
+      border-radius: 25px;
       top: 5px;
       left: 0;
       right: 0;
@@ -55,6 +57,7 @@
     .progress .value {
       background-color: #7cc4ff;
       display: inline-block;
+      border-radius: 25px;
       height: 100%;
     }
 }

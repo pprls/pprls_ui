@@ -25,7 +25,7 @@ public class Item {
     private LocalDate deadLine;
     private String instructions;
     private Double progress;
-    private List<Attachment> attachments;
+    private List<Attachment> attachments = new ArrayList<Attachment>();
     private boolean pending;
 
     public Item(){
@@ -35,7 +35,6 @@ public class Item {
         this.subject = "";
         this.progress = 0.0;
         this.deadLine = LocalDate.ofEpochDay(0);
-        this.attachments = new ArrayList<Attachment>();
         this.pending=true;
     }
 
@@ -46,7 +45,6 @@ public class Item {
         this.subject = subject;
         this.deadLine = deadLine;
         this.progress = progress;
-        this.attachments = new ArrayList<Attachment>();
         this.pending=true;
     }
 

@@ -7,6 +7,7 @@ import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.ui.*;
 import org.pprls.ui.model.Item;
 import org.pprls.ui.views.CreateNewItem;
+import org.pprls.ui.views.registry.RegistryPanel;
 
 import java.net.MalformedURLException;
 import java.util.ArrayList;
@@ -32,7 +33,13 @@ public class ManagerView extends VerticalLayout implements View {
         mainLayout.addComponent(tasksLayout);
 
         final ItemDetailsPanel itemDetailsPanel = new ItemDetailsPanel();
+        itemDetailsPanel.setVisible(true);
         docsLayout.addComponentsAndExpand(itemDetailsPanel);
+        final RegistryPanel registryPanel = new RegistryPanel();
+        registryPanel.setVisible(false);
+        docsLayout.addComponentsAndExpand(registryPanel);
+
+
 
         // tasksLayout
         Button buttonAssignTask = new Button("Ανάθεση εργασίας στη διεύθυνση");
@@ -47,7 +54,6 @@ public class ManagerView extends VerticalLayout implements View {
         tasksLayout.addComponentsAndExpand(itemRowsPanel);
         tasksLayout.addComponent(searchCaseButton);
         tasksLayout.addComponent(protocolButton);
-        //tasksLayout.setExpandRatio(itemGrid, 1f);
 
         buttonAssignTask.addClickListener(click -> {
             // Create a sub-window and set the content
@@ -63,10 +69,17 @@ public class ManagerView extends VerticalLayout implements View {
         // when I change selection on grid  this is what I do
         SingleSelect<Item> itemSelection = itemRowsPanel.getSelection();
         itemRowsPanel.getSelection().addValueChangeListener(event -> {
+            itemDetailsPanel.setVisible(true);
+            registryPanel.setVisible(false);
             itemBinder.setBean(itemSelection.getValue());
             if (!itemSelection.isEmpty())
                 itemDetailsPanel.setAttachments(itemSelection.getValue().getAttachments()); // the if is there to cover the deselect
             else itemDetailsPanel.setAttachments(new ArrayList<>());
+        });
+
+        protocolButton.addClickListener(click -> {
+            itemDetailsPanel.setVisible(false);
+            registryPanel.setVisible(true);
         });
     }
 
