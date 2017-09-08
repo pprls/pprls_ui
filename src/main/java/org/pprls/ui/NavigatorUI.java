@@ -11,6 +11,7 @@ import org.apache.log4j.Logger;
 import org.pprls.ui.views.EmployeeView;
 import org.pprls.ui.views.LoginView;
 import org.pprls.ui.views.manager.ManagerView;
+import org.pprls.ui.views.registry.RegistraarView;
 
 import javax.servlet.annotation.WebServlet;
 import java.net.MalformedURLException;
@@ -24,6 +25,7 @@ public class NavigatorUI extends UI {
     public static final String LOGINVIEW = "loginView";
     public static final String EMPLOYEEVIEW = "employeeView";
     public static final String MANAGERVIEW = "managerView";
+    public static final String REGISTRAARVIEW = "registraarView";
 
     private final static Logger log =
             Logger.getLogger(NavigatorUI.class.getName());
@@ -40,9 +42,11 @@ public class NavigatorUI extends UI {
         navigator.addView(EMPLOYEEVIEW, new EmployeeView());
         try {
             navigator.addView(MANAGERVIEW, new ManagerView());
+            navigator.addView(REGISTRAARVIEW, new RegistraarView());
         } catch (MalformedURLException e) {
             Notification.show("Failed to open manager view with exception : "+e.getLocalizedMessage());
         }
+
         navigator.addView(LOGINVIEW, new LoginView());
 
         navigator.navigateTo(LOGINVIEW);

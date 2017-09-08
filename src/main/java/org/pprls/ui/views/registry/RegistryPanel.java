@@ -1,14 +1,18 @@
 package org.pprls.ui.views.registry;
 
+import com.vaadin.contextmenu.GridContextMenu;
+import com.vaadin.icons.VaadinIcons;
 import com.vaadin.server.ThemeResource;
 import com.vaadin.shared.ui.datefield.DateResolution;
 import com.vaadin.ui.*;
+import com.vaadin.ui.renderers.ButtonRenderer;
 import com.vaadin.ui.renderers.HtmlRenderer;
 import com.vaadin.ui.renderers.ImageRenderer;
-import org.pprls.ui.model.Item;
+import com.vaadin.ui.themes.ValoTheme;
 import org.pprls.ui.model.RegistryRecord;
 import org.pprls.ui.model.RegistryRepository;
 
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class RegistryPanel extends VerticalLayout {
@@ -47,6 +51,7 @@ public class RegistryPanel extends VerticalLayout {
 
         registryNumber = new TextField("Αριθμός Πρωτοκόλλου");
         year = new DateField("Έτος");
+        year.setValue(LocalDate.now());
         year.setResolution(DateResolution.YEAR);
         from = new DateField("από");
         to = new DateField("έως");
@@ -73,27 +78,58 @@ public class RegistryPanel extends VerticalLayout {
         fifthline.setComponentAlignment(searchButton, Alignment.BOTTOM_CENTER);
 
         results = new Grid<>("Αποστελέσματα");
-        Grid.Column<RegistryRecord, ThemeResource> imageColumn = results.addColumn(
-                p -> new ThemeResource("img/"+p.getDirection()+".png"),
-                new ImageRenderer());
+        results.addColumn(p -> VaadinIcons.valueOf(p.getDirection().toString()).getHtml(), new HtmlRenderer());
         results.addColumn(RegistryRecord::getRegistryNumber).setCaption("Αρ. Πρωτ.").setId("registryNumber");
         results.addColumn(RegistryRecord::getRegistryDate).setCaption("Ημ/νία").setId("registryDate");
         results.addColumn(RegistryRecord::getYear).setCaption("Έτος").setId("year");
         results.addColumn(RegistryRecord::getDescription).setCaption("Θέμα").setId("subject");
         results.addColumn(RegistryRecord::getFrom).setCaption("Από").setId("from");
-        results.addColumn(RegistryRecord::getTo).setCaption("Έως").setId("to");
+        results.addColumn(RegistryRecord::getTo).setCaption("Πρός").setId("to");
         results.setSizeFull();
         results.setItems(RegistryRepository.INSTANCE.getRegistryRecords());
         results.setFrozenColumnCount(4);
+        GridContextMenu<RegistryRecord> contextMenu = new GridContextMenu<>(results);
+        contextMenu.addGridHeaderContextMenuListener(event -> {
+            contextMenu.removeItems();
+            contextMenu.addItem("Εμφάνιση όλων", VaadinIcons.EYE, selectedMenuItem -> {
+                for (Grid.Column col : results.getColumns()) {
+                    col.setHidden(false);
+                }
+            });
+            contextMenu.addItem("Απόκρυψη", VaadinIcons.EYE_SLASH, selectedMenuItem -> {
+                event.getColumn().setHidden(true);
+            });
+        });
         addComponentsAndExpand(results);
 
         searchButton.addClickListener(click -> {
-            String query = "REGNUMBER="+registryNumber.getValue();
-            query += "&YEAR="+year.getValue();
-            query += "&FROM="+from.getValue().format(DateTimeFormatter.ofPattern("dd-mm-yyyy"));
-            query += "&TO="+to.getValue().format(DateTimeFormatter.ofPattern("dd-mm-yyyy"));
-            query += "&KEYWORDS="+keywords.getValue();
-            RegistryRepository.INSTANCE.getRegistryRecords(query);
+            String query = "";
+            try {
+                query += "REGNUMBER=" + registryNumber.getValue();
+            } catch (Exception ex) {
+            }
+            ;
+            try {
+                query += "&YEAR=" + year.getValue().getYear();
+            } catch (Exception ex) {
+            }
+            ;
+            try {
+                query += "&FROM=" + from.getValue().format(DateTimeFormatter.ofPattern("dd-mm-yyyy"));
+            } catch (Exception ex) {
+            }
+            ;
+            try {
+                query += "&TO=" + to.getValue().format(DateTimeFormatter.ofPattern("dd-mm-yyyy"));
+            } catch (Exception ex) {
+            }
+            ;
+            try {
+                query += "&KEYWORDS=" + keywords.getValue();
+            } catch (Exception ex) {
+            }
+            ;
+            results.setItems(RegistryRepository.INSTANCE.getRegistryRecords(query));
         });
     }
 }

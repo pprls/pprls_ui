@@ -14,6 +14,7 @@ public class LoginView extends VerticalLayout implements View {
 
         Button buttonManager = new Button("Προϊστάμενος");
         Button buttonEmployee = new Button("Υπάλληλος");
+        Button buttonRegistraar = new Button("Πρωτοκολλάριος");
 
         buttonManager.addClickListener(new Button.ClickListener() {
             @Override
@@ -29,8 +30,16 @@ public class LoginView extends VerticalLayout implements View {
             }
         });
 
+        buttonRegistraar.addClickListener(new Button.ClickListener() {
+            @Override
+            public void buttonClick(Button.ClickEvent clickEvent) {
+                UI.getCurrent().getNavigator().navigateTo(NavigatorUI.REGISTRAARVIEW);
+            }
+        });
+
         this.addComponent(buttonManager);
         this.addComponent(buttonEmployee);
+        this.addComponent(buttonRegistraar);
 
     }
 

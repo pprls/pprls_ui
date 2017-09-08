@@ -32,14 +32,12 @@ public class ManagerView extends VerticalLayout implements View {
         mainLayout.addComponent(docsLayout);
         mainLayout.addComponent(tasksLayout);
 
-        final ItemDetailsPanel itemDetailsPanel = new ItemDetailsPanel();
+        final ItemDetailsPanel itemDetailsPanel = new ItemDetailsPanel("Item Details");
         itemDetailsPanel.setVisible(true);
         docsLayout.addComponentsAndExpand(itemDetailsPanel);
         final RegistryPanel registryPanel = new RegistryPanel();
         registryPanel.setVisible(false);
         docsLayout.addComponentsAndExpand(registryPanel);
-
-
 
         // tasksLayout
         Button buttonAssignTask = new Button("Ανάθεση εργασίας στη διεύθυνση");
@@ -63,7 +61,7 @@ public class ManagerView extends VerticalLayout implements View {
         });
 
         final Binder<Item> itemBinder = new Binder<>(Item.class);
-        itemBinder.forField(itemDetailsPanel.getRtArea())
+        itemBinder.forField(itemDetailsPanel)
                 .bind("instructions");
 
         // when I change selection on grid  this is what I do

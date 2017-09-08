@@ -1,17 +1,16 @@
 package org.pprls.ui.views.widgets;
 
+import com.vaadin.data.HasValue;
+import com.vaadin.shared.Registration;
 import com.vaadin.ui.Panel;
 import com.vaadin.ui.VerticalLayout;
-import org.pprls.ui.model.Attachment;
 import org.vaadin.alump.ckeditor.CKEditorConfig;
 import org.vaadin.alump.ckeditor.CKEditorTextField;
-
-import java.util.List;
 
 /**
  * Created by koapost on 26/8/2017.
  */
-public class DirectionsViewer extends Panel {
+public class DirectionsViewer extends Panel implements HasValue {
 
     private final CKEditorTextField rtArea;
 
@@ -38,10 +37,40 @@ public class DirectionsViewer extends Panel {
 
     }
 
-    public CKEditorTextField getRtArea(){
-        return rtArea;
+    @Override
+    public void setValue(Object o) {
+        rtArea.setValue((String)o);
     }
 
+    @Override
+    public Object getValue() {
+        return rtArea.getValue();
+    }
+
+    @Override
+    public void setRequiredIndicatorVisible(boolean b) {
+        rtArea.setRequiredIndicatorVisible(b);
+    }
+
+    @Override
+    public boolean isRequiredIndicatorVisible() {
+        return rtArea.isRequiredIndicatorVisible();
+    }
+
+    @Override
+    public void setReadOnly(boolean b) {
+        rtArea.setReadOnly(b);
+    }
+
+    @Override
+    public boolean isReadOnly() {
+        return rtArea.isReadOnly();
+    }
+
+    @Override
+    public Registration addValueChangeListener(ValueChangeListener valueChangeListener) {
+        return rtArea.addValueChangeListener(valueChangeListener);
+    }
 }
 
 

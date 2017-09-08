@@ -1,24 +1,32 @@
 package org.pprls.ui.views.manager;
 
+import com.vaadin.data.HasValue;
+import com.vaadin.shared.Registration;
 import com.vaadin.ui.Button;
-import com.vaadin.ui.Component;
+import com.vaadin.ui.CustomComponent;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.themes.ValoTheme;
 import org.pprls.ui.model.Attachment;
-import org.pprls.ui.views.widgets.ItemViewer;
-import org.vaadin.alump.ckeditor.CKEditorTextField;
+import org.pprls.ui.views.widgets.AttachmentViewer;
+import org.pprls.ui.views.widgets.DirectionsViewer;
 
 import java.util.List;
 
-public class ItemDetailsPanel extends VerticalLayout {
+public class ItemDetailsPanel extends CustomComponent implements HasValue {
 
-    private final ItemViewer itemViewer;
+    private final DirectionsViewer directionsViewer;
+    private final AttachmentViewer attachmentsViewer;
 
-    public ItemDetailsPanel() {
-        setMargin(false);
-        itemViewer = new ItemViewer();
-        addComponentsAndExpand(itemViewer);
+    public ItemDetailsPanel(String message) {
+        VerticalLayout panelContent = new VerticalLayout();
+        setCompositionRoot(panelContent);
+        panelContent.setMargin(false);
+        directionsViewer = new DirectionsViewer();
+        panelContent.addComponentsAndExpand(directionsViewer);
+        attachmentsViewer = new AttachmentViewer();
+        panelContent.addComponentsAndExpand(attachmentsViewer);
+        panelContent.setExpandRatio(directionsViewer, 0.4f);
 
         final HorizontalLayout buttonLayout  = new HorizontalLayout();
         buttonLayout.setWidth("100%");
@@ -30,14 +38,45 @@ public class ItemDetailsPanel extends VerticalLayout {
         buttonLayout.addComponent(buttonDecline);
         buttonLayout.addComponent(buttonAssign);
 
-        addComponent(buttonLayout);
-    }
-
-    public CKEditorTextField getRtArea() {
-        return itemViewer.getRtArea();
+        panelContent.addComponent(buttonLayout);
     }
 
     public void setAttachments(List<Attachment> attachments) {
-        itemViewer.setAttachments(attachments);
+        attachmentsViewer.setAttachments(attachments);
+    }
+
+    @Override
+    public void setValue(Object o) {
+        directionsViewer.setValue(o);
+    }
+
+    @Override
+    public Object getValue() {
+        return directionsViewer.getValue();
+    }
+
+    @Override
+    public void setRequiredIndicatorVisible(boolean b) {
+        directionsViewer.setRequiredIndicatorVisible(b);
+    }
+
+    @Override
+    public boolean isRequiredIndicatorVisible() {
+        return directionsViewer.isRequiredIndicatorVisible();
+    }
+
+    @Override
+    public void setReadOnly(boolean b) {
+        directionsViewer.setReadOnly(b);
+    }
+
+    @Override
+    public boolean isReadOnly() {
+        return directionsViewer.isReadOnly();
+    }
+
+    @Override
+    public Registration addValueChangeListener(ValueChangeListener valueChangeListener) {
+        return directionsViewer.addValueChangeListener(valueChangeListener);
     }
 }

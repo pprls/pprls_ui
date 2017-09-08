@@ -19,29 +19,26 @@ public enum RegistryRepository {
     private RegistryRepository() {
         try {
             RegistryRecord newRegistryRecord = new RegistryRecord(Direction.INCOMING, 100L, LocalDate.parse("2019-01-01"), Year.parse("2017"),"Διοικητική πράξη Α", "Χλιμίντζουρας Παναγιώτης", "ΠΔ Ηπείρου");
-            newRegistryRecord.getAttachments().add(new Attachment<URL>(PDF, new URL("file:///N:/scanner/Color0211.pdf"), true));
-            newRegistryRecord.getAttachments().add(new Attachment<String>(RTF, "Sample <strong>text</strong>", false));
-            newRegistryRecord.getAttachments().add(new Attachment<URL>(PDF, new URL("file:///N:/scanner/Color0213.pdf"), true));
+            newRegistryRecord.getAttachments().add(new AttachmentImpl<URL>(PDF, new URL("file:///N:/scanner/Color0211.pdf"), true));
+            newRegistryRecord.getAttachments().add(new AttachmentImpl<String>(RTF, "Sample <strong>text</strong>", false));
+            newRegistryRecord.getAttachments().add(new AttachmentImpl<URL>(PDF, new URL("file:///N:/scanner/Color0213.pdf"), true));
             registryRecordList.add(newRegistryRecord);
             newRegistryRecord = new RegistryRecord(Direction.INCOMING, 101L, LocalDate.parse("2019-01-02"), Year.parse("2017"),"Διοικητική πράξη B", "Θεόδωρος Κολοκοτρώνης", "ΠΔ Ηπείρου");
-            newRegistryRecord.getAttachments().add(new Attachment<URL>(PDF, new URL("file:///N:/scanner/Color0211.pdf"), true));
-            newRegistryRecord.getAttachments().add(new Attachment<String>(RTF, "Sample <strong>text</strong>", false));
-            newRegistryRecord.getAttachments().add(new Attachment<URL>(PDF, new URL("file:///N:/scanner/Color0213.pdf"), true));
             registryRecordList.add(newRegistryRecord);
             newRegistryRecord = new RegistryRecord(Direction.INCOMING, 102L, LocalDate.parse("2019-01-03"), Year.parse("2017"),"Διοικητική πράξη Γ", "Νικηταράς ο Τουρκοφάγος", "ΠΔ Ηπείρου");
-            newRegistryRecord.getAttachments().add(new Attachment<URL>(PDF, new URL("file:///N:/scanner/Color0211.pdf"), true));
-            newRegistryRecord.getAttachments().add(new Attachment<String>(RTF, "Sample <strong>text</strong>", false));
-            newRegistryRecord.getAttachments().add(new Attachment<URL>(PDF, new URL("file:///N:/scanner/Color0213.pdf"), true));
+            newRegistryRecord.getAttachments().add(new AttachmentImpl<URL>(PDF, new URL("file:///N:/scanner/Color0211.pdf"), true));
+            newRegistryRecord.getAttachments().add(new AttachmentImpl<String>(RTF, "Sample <strong>text</strong>", false));
+            newRegistryRecord.getAttachments().add(new AttachmentImpl<URL>(PDF, new URL("file:///N:/scanner/Color0213.pdf"), true));
             registryRecordList.add(newRegistryRecord);
             newRegistryRecord = new RegistryRecord(Direction.OUTGOING, 103L, LocalDate.parse("2019-01-04"), Year.parse("2017"),"Διοικητική πράξη Δ", "Οδυσσέας Ανδρούτσος", "ΠΔ Ηπείρου");
-            newRegistryRecord.getAttachments().add(new Attachment<URL>(PDF, new URL("file:///N:/scanner/Color0211.pdf"), true));
-            newRegistryRecord.getAttachments().add(new Attachment<String>(RTF, "Sample <strong>text</strong>", false));
-            newRegistryRecord.getAttachments().add(new Attachment<URL>(PDF, new URL("file:///N:/scanner/Color0213.pdf"), true));
+            newRegistryRecord.getAttachments().add(new AttachmentImpl<URL>(PDF, new URL("file:///N:/scanner/Color0211.pdf"), true));
+            newRegistryRecord.getAttachments().add(new AttachmentImpl<String>(RTF, "Sample <strong>text</strong>", false));
+            newRegistryRecord.getAttachments().add(new AttachmentImpl<URL>(PDF, new URL("file:///N:/scanner/Color0213.pdf"), true));
             registryRecordList.add(newRegistryRecord);
             newRegistryRecord = new RegistryRecord(Direction.OUTGOING, 104L, LocalDate.parse("2019-01-05"), Year.parse("2017"),"Διοικητική πράξη Ε", "Ανδρέας Μιαούλης", "ΠΔ Ηπείρου");
-            newRegistryRecord.getAttachments().add(new Attachment<URL>(PDF, new URL("file:///N:/scanner/Color0211.pdf"), true));
-            newRegistryRecord.getAttachments().add(new Attachment<String>(RTF, "Sample <strong>text</strong>", false));
-            newRegistryRecord.getAttachments().add(new Attachment<URL>(PDF, new URL("file:///N:/scanner/Color0213.pdf"), true));
+            newRegistryRecord.getAttachments().add(new AttachmentImpl<URL>(PDF, new URL("file:///N:/scanner/Color0211.pdf"), true));
+            newRegistryRecord.getAttachments().add(new AttachmentImpl<String>(RTF, "Sample <strong>text</strong>", false));
+            newRegistryRecord.getAttachments().add(new AttachmentImpl<URL>(PDF, new URL("file:///N:/scanner/Color0213.pdf"), true));
             registryRecordList.add(newRegistryRecord);
 
         }catch(Exception ex){
@@ -64,30 +61,25 @@ public enum RegistryRepository {
     }
 
     public List<RegistryRecord> getRegistryRecords( String query) {
+        String regNumParam = breakParameters(query, "REGNUMBER");
+        String yearParam = breakParameters(query, "YEAR");
         List<RegistryRecord> result = new ArrayList<>();
         for(RegistryRecord registryRecord : registryRecordList) {
-            String[] parameters = query.split("&");
-            for(String parameter : parameters){
-                String[] variable = parameter.split("=");
-                if(!variable[1].isEmpty()){
-                    switch(variable[0]){
-                        case "REGNUMBER":
-                            break;
-                        case "YEAR" :
-                            break;
-                        case "FROM" :
-                            LocalDate dt = new LocalDate(variable[0]);
-                            if (registryRecord.getRegistryDate().isAfter() && registryRecord.getRegistryDate().isBefore(to)) result.add(registryRecord);
-                            break;
-                        case "TO" :
-                            break;
-                        case "KEYWORDS" :
-                            break;
-                    }
-                }
-            }
+            if ((regNumParam.isEmpty() || registryRecord.getRegistryNumber()==Long.parseLong(regNumParam)) && registryRecord.getYear().compareTo(Year.parse(yearParam))==0) result.add(registryRecord);
         }
         return result;
+    }
+
+    private String breakParameters(String query, String regnumber) {
+        String[] params = query.split("&");
+        for(String param : params){
+            try{
+                if(param.startsWith(regnumber)) return param.split("=")[1];
+            }catch(Exception ex){
+                return "";
+            }
+        }
+        return "";
     }
 
 

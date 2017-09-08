@@ -1,18 +1,14 @@
 package org.pprls.ui.views.widgets;
 
 import com.vaadin.icons.VaadinIcons;
-import com.vaadin.server.ClientConnector;
 import com.vaadin.server.StreamResource;
 import com.vaadin.server.ThemeResource;
 import com.vaadin.ui.*;
-import com.vaadin.ui.themes.ValoTheme;
 import com.whitestein.vaadin.widgets.wtpdfviewer.WTPdfViewer;
 import org.pprls.ui.model.Attachment;
 import org.vaadin.alump.ckeditor.CKEditorConfig;
 import org.vaadin.alump.ckeditor.CKEditorTextField;
 
-import javax.validation.constraints.AssertTrue;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
@@ -59,11 +55,7 @@ public class AttachmentViewer extends Panel{
         layout.addComponentsAndExpand(rtArea);
         layout.addComponentsAndExpand(pdfArea);
         layout.addComponent(navLayout);
-
         setContent(layout);
-        //this.addStyleName(ValoTheme.LAYOUT_COMPONENT_GROUP);
-        //this.setMargin(false);
-        //this.setSizeFull();
 
         prev.setEnabled(false);
         next.setEnabled(false);
@@ -74,6 +66,8 @@ public class AttachmentViewer extends Panel{
 
     private void showAttachment( int i) {
         if(!attachments.isEmpty()) {
+            prev.setEnabled(true);
+            next.setEnabled(true);
             if(attachments.get(i).isSigned()) {
                 this.setIcon(new ThemeResource("img/signature.png"));
                 this.setDescription(attachments.get(i).getSignaturesInfo());
@@ -103,6 +97,9 @@ public class AttachmentViewer extends Panel{
                     rtArea.setValue(text);
                     break;
             }
+        }else{
+            prev.setEnabled(false);
+            next.setEnabled(false);
         }
     }
 
@@ -120,11 +117,11 @@ public class AttachmentViewer extends Panel{
         showAttachment(index);
     }
 
-    public void setEnabled(boolean flag){
-        super.setEnabled(flag);
-        pdfArea.setEnabled(flag);
-        rtArea.setEnabled(flag);
-        next.setEnabled(flag);
-        prev.setEnabled(flag);
-    }
+//    public void setEnabled(boolean flag){
+//        super.setVisible(flag);
+//        pdfArea.setEnabled(flag);
+//        rtArea.setEnabled(flag);
+//        next.setEnabled(flag);
+//        prev.setEnabled(flag);
+//    }
 }

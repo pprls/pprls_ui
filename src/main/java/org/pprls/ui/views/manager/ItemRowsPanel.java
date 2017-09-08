@@ -42,10 +42,10 @@ public class ItemRowsPanel extends Panel {
 
         Button pendingButton = new Button("Εκκρεμότητες Διεύθυνσης");
         pendingButton.setWidth("100%");
-        pendingButton.setVisible(pending);
+        pendingButton.setVisible(!pending);
         Button pastButton = new Button("Παρελθόντα Ολοκληρωμένα");
         pastButton.setWidth("100%");
-        pastButton.setVisible(!pending);
+        pastButton.setVisible(pending);
         layout.addComponent(pendingButton);
         layout.addComponent(pastButton);
         pendingButton.addClickListener(click -> toggle(pendingButton, pastButton));
@@ -54,8 +54,8 @@ public class ItemRowsPanel extends Panel {
 
     private void toggle(Button pendingButton, Button pastButton) {
         pending = !pending;
-        pendingButton.setVisible(pending);
-        pastButton.setVisible(!pending);
+        pendingButton.setVisible(!pending);
+        pastButton.setVisible(pending);
         readItemsList();
     }
 
