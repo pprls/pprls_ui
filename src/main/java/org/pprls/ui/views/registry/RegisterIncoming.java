@@ -1,72 +1,52 @@
 package org.pprls.ui.views.registry;
 
+import com.vaadin.annotations.DesignRoot;
 import com.vaadin.icons.VaadinIcons;
 import com.vaadin.server.Resource;
-import com.vaadin.shared.ui.datefield.DateResolution;
 import com.vaadin.ui.*;
+import com.vaadin.ui.declarative.Design;
 
-import java.time.LocalDate;
-
+@DesignRoot
 public class RegisterIncoming extends Panel {
 
-    TextField registryNumber, subject, attachmentDescription;
-    RichTextArea  description;
-    DateField registryDate, registryYear;
-    ComboBox from, classification, composer, to;
-    Button addComposer, toButton, ccButton, internalButton, externalButton;
+    VerticalLayout vertical;
+    ComboBox from, classification, composer;
+    Button addComposer, toButton, ccButton, internalButton, externalButton, register;
     ListSelect composersList, toList;
+    PopupView subject, attachmentDescription, comments;
 
     public RegisterIncoming(String title, Resource icon){
         super(title);
         setIcon(icon);
 
-        registryNumber = new TextField();
-        registryNumber.setSizeFull();
-        registryDate = new DateField();
-        registryDate.setValue(LocalDate.now());
-        registryDate.setSizeFull();
-        registryYear = new DateField();
-        registryYear.setValue(LocalDate.now());
-        registryYear.setSizeFull();
-        registryYear.setResolution(DateResolution.YEAR);
-        from = new ComboBox();
-        from.setSizeFull();
-        classification = new ComboBox();
-        classification.setSizeFull();
-        composer = new ComboBox();
-        addComposer = new Button(VaadinIcons.USER_CHECK);
-        composersList = new ListSelect<>();
-        composersList.setRows(3);
-        composersList.setWidth("100%");
-        to = new ComboBox();
-        toButton = new Button(VaadinIcons.ENVELOPE);
-        ccButton = new Button(VaadinIcons.EYE);
-        internalButton = new Button(VaadinIcons.HOME);
-        externalButton = new Button(VaadinIcons.TRUCK);
-        toList = new ListSelect<>();
-        toList.setRows(10);
-        toList.setWidth("100%");
-        subject = new TextField();
-        subject.setSizeFull();
-        attachmentDescription = new TextField();
-        attachmentDescription.setSizeFull();
-        description = new RichTextArea();
-        description.setSizeFull();
+        Design.read("RegisterIncoming.html", this);
+
+        subject.setContent(new PopupTextFieldContent("Θέμα", "Γράψε το Θέμα"));
+        attachmentDescription.setContent(new PopupTextFieldContent("Συνημμένα", "Γράψε την περιγραφή συνημμένων εδώ"));
+        comments.setContent(new PopupTextFieldContent("Παρατηρήσεις", "Γράψε τις παρατηρήσεις σου"));
 
 
-        HorizontalLayout firstLine = new HorizontalLayout(registryNumber, registryDate, registryYear);
-        firstLine.setSizeFull();
-        HorizontalLayout secondLine = new HorizontalLayout(from, classification);
-        secondLine.setSizeFull();
-        HorizontalLayout thirdLine = new HorizontalLayout();
-        thirdLine.addComponentsAndExpand(composer);
-        thirdLine.addComponent(addComposer);
-        HorizontalLayout fourthLine = new HorizontalLayout();
-        fourthLine.addComponentsAndExpand(to);
-        fourthLine.addComponents(toButton, ccButton, internalButton, externalButton);
-
-        VerticalLayout vertical = new VerticalLayout(firstLine, secondLine, thirdLine, composersList, fourthLine, toList, subject, attachmentDescription);
-        vertical.addComponentsAndExpand(description);
         setContent(vertical);
+    }
+
+    private static class PopupTextFieldContent implements PopupView.Content {
+        private final HorizontalLayout layout;
+        private final RichTextArea description = new RichTextArea();
+
+        private PopupTextFieldContent(String caption, String value) {
+            description.setCaption(caption);
+            description.setValue(value);
+            layout = new HorizontalLayout(description);
+        }
+
+        @Override
+        public final Component getPopupComponent() {
+            return layout;
+        }
+
+        @Override
+        public final String getMinimizedValueAsHTML() {
+            return description.getValue();
+        }
     }
 }
