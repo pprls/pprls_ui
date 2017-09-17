@@ -6,6 +6,9 @@ import com.vaadin.server.Resource;
 import com.vaadin.ui.*;
 import com.vaadin.ui.declarative.Design;
 
+import java.time.LocalDate;
+import java.time.Year;
+
 @DesignRoot
 public class RegisterIncoming extends Panel {
 
@@ -14,6 +17,7 @@ public class RegisterIncoming extends Panel {
     Button addComposer, toButton, ccButton, internalButton, externalButton, register;
     ListSelect composersList, toList;
     PopupView subject, attachmentDescription, comments;
+    Window resultWindow;
 
     public RegisterIncoming(String title, Resource icon){
         super(title);
@@ -27,6 +31,14 @@ public class RegisterIncoming extends Panel {
 
 
         setContent(vertical);
+
+        register.addClickListener(click ->UI.getCurrent().addWindow(resultWindow));
+    }
+
+    private void openBarcode(){
+        resultWindow = new RegisterResults("Αριθμός πρωτοκόλλου", VaadinIcons.EYE);
+        ((RegisterResults)resultWindow).setRegData("ΠΔ Ηπείρου Δυτικής Μακεδονίας", 234L, LocalDate.now(), Year.now());
+        UI.getCurrent().addWindow(resultWindow);
     }
 
     private static class PopupTextFieldContent implements PopupView.Content {
