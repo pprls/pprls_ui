@@ -4,8 +4,9 @@ import com.vaadin.annotations.DesignRoot;
 import com.vaadin.server.Resource;
 import com.vaadin.ui.*;
 import com.vaadin.ui.declarative.Design;
+import org.apache.log4j.helpers.DateTimeDateFormat;
 
-import java.text.DateFormat;
+import java.time.format.DateTimeFormatter;
 import java.time.LocalDate;
 import java.time.Year;
 import java.util.Locale;
@@ -25,8 +26,7 @@ public class RegisterResults extends Window {
 
     public void setRegData(String unitDesc, long regNumber, LocalDate date, Year year){
         unitDescription.setValue(unitDesc);
-        DateFormat df = DateFormat.getDateInstance(DateFormat.MEDIUM, Locale.forLanguageTag("el_GR"));
-        data.setValue(regNumber+"/"+ df.format(date)+"/"+year.toString());
+        data.setValue(regNumber+"    "+ date.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))+"      "+year.toString());
     }
 
 }

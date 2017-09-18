@@ -2,39 +2,21 @@
 <html>
 <head>
     <meta name="package-mapping"
-          content="my:org.pprls.ui.views.registry" />
+          content="my:org.pprls.ui.views.manager"/>
 </head>
 <body>
-<v-panel>
+<v-window modal>
     <v-vertical-layout _id="vertical">
-        <v-horizontal-layout _id="firstLine" size-full>
-            <v-combo-box _id="from" caption="Από" size-full></v-combo-box>
-            <v-combo-box _id="classification" caption="Διαβάθμηση" size-full></v-combo-box>
-        </v-horizontal-layout>
-        <v-horizontal-layout _id="secondLine" size-full>
-            <v-combo-box _id="composer" caption="Συντάκτής" size-full :expand ></v-combo-box>
-            <v-button _id="addComposer" icon="fonticon://Vaadin-Icons/e61b" :bottom></v-button>
-        </v-horizontal-layout>
-        <v-list-select _id="composersList" rows="3" size-full></v-list-select>
-        <v-horizontal-layout _id="fourthLine" size-full>
-            <v-combo-box _id="to" caption="Προς" size-full :expand ></v-combo-box>
-            <v-button _id="toButton" icon="fonticon://Vaadin-Icons/e7dc" :bottom></v-button><!--VaadinIcons.ENVELOPE-->
-            <v-button _id="ccButton" icon="fonticon://Vaadin-Icons/e7df" :bottom></v-button><!--VaadinIcons.EYE-->
-            <v-button _id="internalButton" icon="fonticon://Vaadin-Icons/e71c" :bottom></v-button><!--VaadinIcons.INFO_CIRCLE_O-->
-            <v-button _id="externalButton" icon="fonticon://Vaadin-Icons/e6dd" :bottom></v-button><!--VaadinIcons.TRUCK-->
-        </v-horizontal-layout>
-        <v-list-select _id="toList" rows="8" size-full></v-list-select>
-        <v-popup-view _id="subject" description="Θέμα" style-name="subject" size-full>
-            Γράψε το Θέμα
-        </v-popup-view>
-        <v-popup-view _id="attachmentDescription" description="Συνημμένα" style-name="attachments" size-full>
-            Γράψε την περιγραφή συνημμένων εδώ
-        </v-popup-view>
-        <v-popup-view _id="comments" description="Παρατηρήσεις σχόλεια" style-name="comments" size-full>
-            Γράψε τις παρατηρήσεις σου
-        </v-popup-view>
-        <v-button _id="register" icon="fonticon://Vaadin-Icons/e688" :bottom :right>Έκδοση</v-button><!--VaadinIcons.BARCODE-->
+        <vaadin-tree-grid _id="organization" size-full :expand selection-mode="single">
+            <table >
+                <colgroup>
+                    <col name="name" style-name="no-horizontal-lines">
+                </colgroup>
+            </table>
+        </vaadin-tree-grid>
+        <v-button _id="proposal" enabled="false" :center>Πρόταση για προώθηση</v-button>
+        <v-button _id="unknown" :center>Δεν ξέρω</v-button>
     </v-vertical-layout>
-</v-panel>
+</v-window>
 </body>
 </html>

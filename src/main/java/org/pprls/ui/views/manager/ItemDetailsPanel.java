@@ -2,10 +2,7 @@ package org.pprls.ui.views.manager;
 
 import com.vaadin.data.HasValue;
 import com.vaadin.shared.Registration;
-import com.vaadin.ui.Button;
-import com.vaadin.ui.CustomComponent;
-import com.vaadin.ui.HorizontalLayout;
-import com.vaadin.ui.VerticalLayout;
+import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
 import org.pprls.ui.model.Attachment;
 import org.pprls.ui.views.widgets.AttachmentViewer;
@@ -39,6 +36,9 @@ public class ItemDetailsPanel extends CustomComponent implements HasValue {
         buttonLayout.addComponent(buttonAssign);
 
         panelContent.addComponent(buttonLayout);
+
+
+        buttonDecline.addClickListener(clickEvent -> UI.getCurrent().addWindow(new RejectItem()));
     }
 
     public void setAttachments(List<Attachment> attachments) {

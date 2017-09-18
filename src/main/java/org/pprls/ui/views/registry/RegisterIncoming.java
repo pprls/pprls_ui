@@ -17,27 +17,23 @@ public class RegisterIncoming extends Panel {
     Button addComposer, toButton, ccButton, internalButton, externalButton, register;
     ListSelect composersList, toList;
     PopupView subject, attachmentDescription, comments;
-    Window resultWindow;
 
     public RegisterIncoming(String title, Resource icon){
         super(title);
         setIcon(icon);
 
         Design.read("RegisterIncoming.html", this);
-
         subject.setContent(new PopupTextFieldContent("Θέμα", "Γράψε το Θέμα"));
         attachmentDescription.setContent(new PopupTextFieldContent("Συνημμένα", "Γράψε την περιγραφή συνημμένων εδώ"));
         comments.setContent(new PopupTextFieldContent("Παρατηρήσεις", "Γράψε τις παρατηρήσεις σου"));
-
-
         setContent(vertical);
 
-        register.addClickListener(click ->UI.getCurrent().addWindow(resultWindow));
+        register.addClickListener(click ->openBarcode());
     }
 
     private void openBarcode(){
-        resultWindow = new RegisterResults("Αριθμός πρωτοκόλλου", VaadinIcons.EYE);
-        ((RegisterResults)resultWindow).setRegData("ΠΔ Ηπείρου Δυτικής Μακεδονίας", 234L, LocalDate.now(), Year.now());
+        RegisterResults resultWindow = new RegisterResults("Αριθμός πρωτοκόλλου", VaadinIcons.EYE);
+        resultWindow.setRegData("ΠΔ Ηπείρου Δυτικής Μακεδονίας", 234L, LocalDate.now(), Year.now());
         UI.getCurrent().addWindow(resultWindow);
     }
 
