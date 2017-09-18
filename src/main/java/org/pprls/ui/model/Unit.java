@@ -32,4 +32,8 @@ public class Unit {
     public void addFather(Unit father){
         this.father = father;
     }
+
+    public String toString(){
+        return name;
+    }
 }

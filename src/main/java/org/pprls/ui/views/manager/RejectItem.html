@@ -7,13 +7,8 @@
 <body>
 <v-window modal>
     <v-vertical-layout _id="vertical">
-        <vaadin-tree-grid _id="organization" size-full :expand selection-mode="single">
-            <table >
-                <colgroup>
-                    <col name="name" style-name="no-horizontal-lines">
-                </colgroup>
-            </table>
-        </vaadin-tree-grid>
+        <vaadin-tree _id="organization" size-full :expand selection-mode="single">
+        </vaadin-tree>
         <v-button _id="proposal" enabled="false" :center>Πρόταση για προώθηση</v-button>
         <v-button _id="unknown" :center>Δεν ξέρω</v-button>
     </v-vertical-layout>
