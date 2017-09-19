@@ -21,7 +21,7 @@ public class RegisterResults extends Window {
     public RegisterResults(String title, Resource icon){
         super(title);
         setIcon(icon);
-        Design.read("RegisterResults.html", this);
+        Design.read( this);
     }
 
     public void setRegData(String unitDesc, long regNumber, LocalDate date, Year year){

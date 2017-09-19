@@ -25,7 +25,7 @@ public class ItemDetailsPanel extends CustomComponent implements HasValue {
         panelContent.addComponentsAndExpand(attachmentsViewer);
         panelContent.setExpandRatio(directionsViewer, 0.4f);
 
-        final HorizontalLayout buttonLayout  = new HorizontalLayout();
+        final HorizontalLayout buttonLayout = new HorizontalLayout();
         buttonLayout.setWidth("100%");
         Button buttonDecline = new Button("Απορρίπτω");
         buttonDecline.setWidth("100%");
@@ -39,15 +39,11 @@ public class ItemDetailsPanel extends CustomComponent implements HasValue {
 
 
         buttonDecline.addClickListener(clickEvent -> UI.getCurrent().addWindow(new RejectItem()));
+        buttonAssign.addClickListener(clickEvent -> UI.getCurrent().addWindow(new AcceptItem()));
     }
 
     public void setAttachments(List<Attachment> attachments) {
         attachmentsViewer.setAttachments(attachments);
-    }
-
-    @Override
-    public void setValue(Object o) {
-        directionsViewer.setValue(o);
     }
 
     @Override
@@ -56,8 +52,8 @@ public class ItemDetailsPanel extends CustomComponent implements HasValue {
     }
 
     @Override
-    public void setRequiredIndicatorVisible(boolean b) {
-        directionsViewer.setRequiredIndicatorVisible(b);
+    public void setValue(Object o) {
+        directionsViewer.setValue(o);
     }
 
     @Override
@@ -66,13 +62,18 @@ public class ItemDetailsPanel extends CustomComponent implements HasValue {
     }
 
     @Override
-    public void setReadOnly(boolean b) {
-        directionsViewer.setReadOnly(b);
+    public void setRequiredIndicatorVisible(boolean b) {
+        directionsViewer.setRequiredIndicatorVisible(b);
     }
 
     @Override
     public boolean isReadOnly() {
         return directionsViewer.isReadOnly();
+    }
+
+    @Override
+    public void setReadOnly(boolean b) {
+        directionsViewer.setReadOnly(b);
     }
 
     @Override

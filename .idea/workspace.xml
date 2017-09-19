@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5cccf52-5dc9-424a-9d31-44eff95dd36f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/RejectItem.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/org.pprls.ui.views.registry/RegisterIncoming.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/org.pprls.ui.views.registry/RegisterResults.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/Unit.java" afterPath="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/Unit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/RejectItem.html" afterPath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/RejectItem.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pprls/ui/NavigatorUI.java" afterPath="$PROJECT_DIR$/src/main/java/org/pprls/ui/NavigatorUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/ItemDetailsPanel.java" afterPath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/ItemDetailsPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/ItemRowsPanel.java" afterPath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/ItemRowsPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/RejectItem.java" afterPath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/RejectItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.css" afterPath="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegisterIncoming.java" afterPath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegisterIncoming.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegisterResults.java" afterPath="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegisterResults.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,68 +30,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RejectItem.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RejectItem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/RejectItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegisterIncoming.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegisterIncoming.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="98" lean-forward="false" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="98" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegistryPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegistryPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UnitRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/model/UnitRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Unit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/model/Unit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+            <state relative-caret-position="231">
+              <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
               <folding>
-                <element signature="e#428#429#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#637#638#0" expanded="true" />
-                <element signature="e#668#669#0" expanded="true" />
-                <element signature="e#695#696#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubjectRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/model/SubjectRepository.java">
+      <file leaf-file-name="RejectItem.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/org/pprls/ui/views/manager/RejectItem.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            <state relative-caret-position="119">
+              <caret line="7" column="50" lean-forward="true" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AcceptItem.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/org/pprls/ui/views/manager/AcceptItem.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -95,30 +65,70 @@
       <file leaf-file-name="Employee.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/model/Employee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="0">
+              <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RejectItem.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/RejectItem.html">
+      <file leaf-file-name="RegisterIncoming.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/org/pprls/ui/views/registry/RegisterIncoming.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="82" lean-forward="false" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegisterResults.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegisterResults.html">
+      <file leaf-file-name="mytheme.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+            <state relative-caret-position="889">
+              <caret line="81" column="19" lean-forward="false" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addons.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/addons.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="6133" column="68" lean-forward="false" selection-start-line="6133" selection-start-column="68" selection-end-line="6133" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AcceptItem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/AcceptItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
-                <marker date="1505747789376" expanded="true" signature="215:555" ph="..." />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,6 +142,7 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="HTML File" />
+        <option value="Designer2Companion" />
         <option value="Class" />
       </list>
     </option>
@@ -143,6 +154,7 @@
       <find>package org\.pprls\.ui\.model\;\n\nimport java\.net\.MalformedURLException\;\nimport java\.net\.URL\;\nimport java\.time\.LocalDate\;\nimport java\.util\.ArrayList\;\nimport java\.util\.List\;\n\nimport static org\.pprls\.ui\.model\.AttachmentType\.PDF\;\nimport static org\.pprls\.ui\.model\.AttachmentType\.RTF\;\n\npublic enum DataSource \{\n    INSTANCE\;\n\n    private  List\&lt;Item\&gt; itemList \= new ArrayList\&lt;Item\&gt;\(\)\;\n    private  List\&lt;Employee\&gt; employeeslist \= new ArrayList\(\)\;\n\n    private DataSource\(\) throws \{\n        try \{\n            Item newItem \= new Item\(\&quot;Ενέργεια\&quot;\, \&quot;Σέκερης Γεώργιος\&quot;\, LocalDate\.parse\(\&quot;2019\-01\-01\&quot;\)\, \&quot;Διοικητική πράξη Α\&quot;\, LocalDate\.parse\(\&quot;2019\-01\-01\&quot;\)\)\;\n            newItem\.setInstructions\(\&quot;\&lt;h2\&gt;Διοικητική πράξη \&lt;mark\&gt;Α\&lt;\/mark\&gt;\&lt;\/h2\&gt;\&quot;\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\&lt;URL\&gt;\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0211\.pdf\&quot;\)\)\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\&lt;String\&gt;\(RTF\, \&quot;Sample \&lt;strong\&gt;text\&lt;\/strong\&gt;\&quot;\)\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\&lt;URL\&gt;\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0213\.pdf\&quot;\)\)\)\;\n            itemList\.add\(newItem\)\;\n            newItem \= new Item\(\&quot;Ενέργεια\&quot;\, \&quot;Ουζουνίδης Νικόλαος\&quot;\, LocalDate\.parse\(\&quot;2019\-01\-02\&quot;\)\, \&quot;Διοικητική πράξη Β\&quot;\, LocalDate\.parse\(\&quot;2019\-01\-02\&quot;\)\)\;\n            newItem\.setInstructions\(\&quot;\&lt;h2\&gt;Διοικητική πράξη \&lt;mark\&gt;Β\&lt;\/mark\&gt;\&lt;\/h2\&gt;\&quot;\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\&lt;URL\&gt;\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0208\.pdf\&quot;\)\)\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\&lt;String\&gt;\(RTF\, \&quot;Sample \&lt;strong\&gt;text\&lt;\/strong\&gt;\&quot;\)\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\&lt;URL\&gt;\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color210\.pdf\&quot;\)\)\)\;\n            itemList\.add\(newItem\)\;\n            newItem \= new Item\(\&quot;Ενέργεια\&quot;\, \&quot;Λεοντίδης Λέων\&quot;\, LocalDate\.parse\(\&quot;2019\-01\-03\&quot;\)\, \&quot;Διοικητική πράξη Γ\&quot;\, LocalDate\.parse\(\&quot;2019\-01\-03\&quot;\)\)\;\n            newItem\.setInstructions\(\&quot;\&lt;h2\&gt;Διοικητική πράξη \&lt;mark\&gt;Γ\&lt;\/mark\&gt;\&lt;\/h2\&gt;\&quot;\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\&lt;URL\&gt;\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0211\.pdf\&quot;\)\)\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\&lt;String\&gt;\(RTF\, \&quot;Sample \&lt;strong\&gt;text\&lt;\/strong\&gt;\&quot;\)\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\&lt;URL\&gt;\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0213\.pdf\&quot;\)\)\)\;\n            itemList\.add\(newItem\)\;\n            newItem \= new Item\(\&quot;Ενέργεια\&quot;\, \&quot;Χριστοδούλου Θεοδόσιος\&quot;\, LocalDate\.parse\(\&quot;2019\-01\-04\&quot;\)\, \&quot;Διοικητική πράξη Δ\&quot;\, LocalDate\.parse\(\&quot;2019\-01\-04\&quot;\)\)\;\n            newItem\.setInstructions\(\&quot;\&lt;h2\&gt;Διοικητική πράξη \&lt;mark\&gt;Δ\&lt;\/mark\&gt;\&lt;\/h2\&gt;\&quot;\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0208\.pdf\&quot;\)\)\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0209\.pdf\&quot;\)\)\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0210\.pdf\&quot;\)\)\)\;\n            itemList\.add\(newItem\)\;\n            newItem \= new Item\(\&quot;Ενέργεια\&quot;\, \&quot;Στανέλλος Σπυρίδων Ιωάννου\&quot;\, LocalDate\.parse\(\&quot;2019\-01\-05\&quot;\)\, \&quot;Διοικητική πράξη Ε\&quot;\, LocalDate\.parse\(\&quot;2019\-01\-05\&quot;\)\)\;\n            newItem\.setInstructions\(\&quot;\&lt;h2\&gt;Διοικητική πράξη \&lt;mark\&gt;Ε\&lt;\/mark\&gt;\&lt;\/h2\&gt;\&quot;\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0211\.pdf\&quot;\)\)\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0212\.pdf\&quot;\)\)\)\;\n            newItem\.getAttachments\(\)\.add\(new Attachment\(PDF\, new URL\(\&quot;file\:\/\/\/N\:\/scanner\/Color0213\.pdf\&quot;\)\)\)\;\n            itemList\.add\(newItem\)\;\n        \}catch\(Exception ex\)\{\n            \n        \}\n\n        employeeslist\.add\(new Employee\(\&quot;Αποστόλου\&quot;\, \&quot;Κωνσταντίνος\&quot;\, \&quot;Νικήτας\&quot;\)\)\;\n        employeeslist\.add\(new Employee\(\&quot;Αποστόλου\&quot;\, \&quot;Ιουλία\&quot;\, \&quot;Κωμσταντίνου\&quot;\)\)\;\n        employeeslist\.add\(new Employee\(\&quot;Αποστόλου\&quot;\, \&quot;Μανώλης\&quot;\, \&quot;Κωνστντίνου\&quot;\)\)\;\n        employeeslist\.add\(new Employee\(\&quot;Παπαμιχαήλ\&quot;\,\&quot;Αννέτα\&quot;\,\&quot;Εμμανουήλ\&quot;\)\)\;\n        \n    \}\n\n    public List\&lt;Item\&gt; getItems\(\) throws MalformedURLException \{\n        return itemList\;\n    \}\n\n    public void save\(Item newItem\)\{\n        itemList\.add\(newItem\)\;\n    \}\n\n    public List\&lt;Employee\&gt; getEmployees\(\)\{\n        return employeeslist\;\n    \}\n\}\n</find>
       <find>selectedItem</find>
       <find>subjectFilter</find>
+      <find>design</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,17 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/converters/FileToUrlConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/CircularArrayList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/widgets/AttachmnetViewer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/AttachmentTypes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/AttachmentType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/widgets/InputStreamSource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/ItemGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.scss" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/EmployeeView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/ManagerView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/AssignView.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/converters/StringToNameConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/converters/SelectionToItemConverter.java" />
@@ -176,7 +177,6 @@
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/RegistryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/Direction.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegistryRecordsView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/NavigatorUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/LoginView.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/widgets/ItemViewer.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/widgets/DirectionsViewer.java" />
@@ -192,16 +192,28 @@
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegisterIncoming.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss" />
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/RegisterIncoming.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/ItemDetailsPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegisterResults.html" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegisterIncoming.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegisterResults.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/Subject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/RejectItem.html" />
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/Unit.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/model/UnitRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/RejectItem.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/NavigatorUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/AcceptItem.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/org/pprls/ui/views/manager/testdesign.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/AcceptItemWindow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/ItemDetailsPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/org/pprls/ui/views/manager/AcceptItemDesign.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/AcceptItemDesign.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/AcceptItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/RejectItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegisterResults.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegisterIncoming.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/org.pprls.ui.views.registry/RegisterIncoming.html" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.scss" />
+        <option value="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/addons.scss" />
+        <option value="$PROJECT_DIR$/src/main/resources/org/pprls/ui/views/manager/RejectItem.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/org/pprls/ui/views/manager/AcceptItem.html" />
       </list>
     </option>
   </component>
@@ -256,7 +268,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -333,10 +344,7 @@
               <item name="pprls_ui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="widgets" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pprls_ui" type="b2602c69:ProjectViewProjectNode" />
@@ -344,6 +352,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pprls_ui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pprls_ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pprls_ui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pprls_ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="registry" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pprls_ui" type="b2602c69:ProjectViewProjectNode" />
@@ -383,12 +410,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -400,16 +428,20 @@
       <recent name="org.pprls.ui.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kapostolou\IdeaProjects\pprls\pprls_ui\src\main\resources\org\pprls\ui\views\manager" />
       <recent name="C:\Users\kapostolou\IdeaProjects\pprls\pprls_ui\src\main\java\org\pprls\ui\views\manager" />
       <recent name="C:\Users\kapostolou\IdeaProjects\pprls\pprls_ui\src\main\resources\static" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.pprls.ui.views.manager" />
       <recent name="org.pprls.ui.model" />
       <recent name="org.pprls.ui.views.registry" />
       <recent name="org.pprls.ui.views" />
       <recent name="org.pprls" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kapostolou\IdeaProjects\pprls\pprls_ui\src\main\resources\org.pprls.ui.views.registry" />
+      <recent name="C:\Users\kapostolou\IdeaProjects\pprls\pprls_ui\src\main\resources\org\pprls\ui\views\manager" />
       <recent name="C:\Users\kapostolou\IdeaProjects\pprls\pprls_ui\src\main\java\org\pprls\ui\views\registry" />
     </key>
   </component>
@@ -465,17 +497,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="org.pprls.ui" />
-      <envs />
-    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -507,6 +528,17 @@
       <module name="" />
       <envs />
       <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="org.pprls.ui" />
+      <envs />
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
       <option name="filePath" />
@@ -593,50 +625,55 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884398" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36924803" sideWeight="0.50488997" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36924803" sideWeight="0.49511003" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36924803" sideWeight="0.50733495" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.49158248" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36924803" sideWeight="0.49266502" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.297066" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30440098" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="com.vaadin.designer2.intellij.outline.OutlineToolWindowManager.toolWindow" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34290954" sideWeight="0.53736657" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="com.vaadin.designer2.intellij.palette.PaletteToolWindowManager.toolWindow" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34290954" sideWeight="0.46263346" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.49288255" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39842874" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.50711745" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884398" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36924803" sideWeight="0.502445" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36924803" sideWeight="0.50488997" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.49158248" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36924803" sideWeight="0.49755502" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36924803" sideWeight="0.49511003" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2787286" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30440098" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="com.vaadin.designer2.intellij.outline.OutlineToolWindowManager.toolWindow" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34290954" sideWeight="0.53535354" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="com.vaadin.designer2.intellij.palette.PaletteToolWindowManager.toolWindow" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34290954" sideWeight="0.46464646" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.49288255" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39842874" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.50711745" order="1" side_tool="true" content_ui="tabs" />
@@ -668,80 +705,33 @@
     </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
+    <option name="sizePresets">
+      <list>
+        <SizePreset>
+          <option name="caption" value="Phone" />
+          <option name="height" value="568" />
+          <option name="width" value="320" />
+        </SizePreset>
+        <SizePreset>
+          <option name="caption" value="Tablet" />
+          <option name="height" value="1024" />
+          <option name="width" value="768" />
+        </SizePreset>
+        <SizePreset>
+          <option name="caption" value="Desktop" />
+          <option name="height" value="900" />
+          <option name="width" value="1440" />
+        </SizePreset>
+      </list>
+    </option>
+  </component>
+  <component name="designer2.settings">
+    <option name="autodetectServerAddress" value="true" />
+    <option name="serverIp" value="10.193.41.68" />
+    <option name="serverPort" value="56415" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/function/Function.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/CreateNewItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="27" column="70" lean-forward="false" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/time/LocalDate.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/widgets/ItemGrid.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/model/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="90" column="27" lean-forward="false" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/model/RegistryRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/8.0.6/vaadin-server-8.0.6.jar!/com/vaadin/ui/Button.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/8.0.6/vaadin-server-8.0.6.jar!/com/vaadin/server/ServerRpcManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/8.0.6/vaadin-server-8.0.6.jar!/com/vaadin/server/communication/ServerRpcHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/8.0.6/vaadin-server-8.0.6.jar!/com/vaadin/server/VaadinServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="164" column="123" lean-forward="false" selection-start-line="164" selection-start-column="123" selection-end-line="164" selection-end-column="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/8.0.6/vaadin-server-8.0.6.jar!/com/vaadin/server/VaadinService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="638" column="0" lean-forward="false" selection-start-line="638" selection-start-column="0" selection-end-line="638" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/8.0.6/vaadin-server-8.0.6.jar!/com/vaadin/server/SynchronizedRequestHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/8.0.6/vaadin-server-8.0.6.jar!/com/vaadin/event/ListenerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="227" column="0" lean-forward="false" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/8.0.6/vaadin-server-8.0.6.jar!/com/vaadin/event/EventRouter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -786,21 +776,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/widgets/ItemViewer.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/widgets/DirectionsViewer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="71" column="64" lean-forward="false" selection-start-line="71" selection-start-column="64" selection-end-line="71" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/NavigatorUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="27" column="45" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/LoginView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -851,7 +826,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/widgets/PopupTextFieldContent.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegisterIncoming.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/org.pprls.ui.views.registry/RegisterIncoming.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="49" lean-forward="false" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
@@ -861,25 +836,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/exportToHTML/org/pprls/ui/views/registry/xaxaxa.form.html" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/xaxaxa.form" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243729">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegistraarView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="81" column="19" lean-forward="false" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -891,41 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/ItemDetailsPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="40" column="96" lean-forward="false" selection-start-line="40" selection-start-column="96" selection-end-line="40" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegisterIncoming.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="35" column="80" lean-forward="false" selection-start-line="35" selection-start-column="71" selection-end-line="35" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegisterResults.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="28" column="86" lean-forward="false" selection-start-line="28" selection-start-column="86" selection-end-line="28" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding>
-            <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/model/SubjectRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -934,49 +860,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/model/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/8.1.0/vaadin-server-8.1.0.jar!/com/vaadin/server/Sizeable.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegisterResults.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding>
-            <marker date="1505747789376" expanded="true" signature="215:555" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegisterIncoming.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="98" lean-forward="false" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="98" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/RejectItem.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="82" lean-forward="false" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegistryPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/model/UnitRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -987,25 +871,234 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/model/Unit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        <state relative-caret-position="442">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#668#669#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="false" />
+            <element signature="e#457#458#0" expanded="false" />
+            <element signature="e#601#602#0" expanded="false" />
+            <element signature="e#637#638#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegistryPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/8.1.0/vaadin-server-8.1.0.jar!/com/vaadin/icons/VaadinIcons.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="67" column="4" lean-forward="false" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/NavigatorUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="36" column="36" lean-forward="false" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/org/pprls/ui/views/manager/testdesign.html">
+      <provider selected="true" editor-type-id="com.vaadin.designer2.intellij.webEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/AcceptItem.html">
+      <provider selected="true" editor-type-id="com.vaadin.designer2.intellij.webEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/ItemDetailsPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/RejectItem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="51" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="4" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/AcceptItemLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/AcceptItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/widgets/DirectionsViewer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="71" column="64" lean-forward="false" selection-start-line="71" selection-start-column="64" selection-end-line="71" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegisterResults.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/org.pprls.ui.views.registry/RegisterIncoming.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/designs.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/org.pprls.ui.views.registry/RegisterResults.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/registry/RegisterIncoming.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="148" column="32" lean-forward="false" selection-start-line="148" selection-start-column="32" selection-end-line="148" selection-end-column="32" />
+          <folding>
+            <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/AcceptItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="6133" column="68" lean-forward="false" selection-start-line="6133" selection-start-column="68" selection-end-line="6133" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="889">
+          <caret line="81" column="19" lean-forward="false" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/addons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/views/manager/RejectItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        <state relative-caret-position="231">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/org/pprls/ui/views/manager/RejectItem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="50" lean-forward="true" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pprls/ui/model/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/org/pprls/ui/views/registry/RegisterIncoming.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/org/pprls/ui/views/manager/AcceptItem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.vaadin.designer2.intellij.webEditor">
+        <state />
       </provider>
     </entry>
   </component>

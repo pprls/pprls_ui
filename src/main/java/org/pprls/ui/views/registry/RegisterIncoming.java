@@ -22,7 +22,7 @@ public class RegisterIncoming extends Panel {
         super(title);
         setIcon(icon);
 
-        Design.read("RegisterIncoming.html", this);
+        Design.read(this);
         subject.setContent(new PopupTextFieldContent("Θέμα", "Γράψε το Θέμα"));
         attachmentDescription.setContent(new PopupTextFieldContent("Συνημμένα", "Γράψε την περιγραφή συνημμένων εδώ"));
         comments.setContent(new PopupTextFieldContent("Παρατηρήσεις", "Γράψε τις παρατηρήσεις σου"));

@@ -1,8 +1,10 @@
 package org.pprls.ui.views.manager;
 
 import com.vaadin.annotations.DesignRoot;
-import com.vaadin.icons.VaadinIcons;
-import com.vaadin.ui.*;
+import com.vaadin.ui.Button;
+import com.vaadin.ui.Tree;
+import com.vaadin.ui.VerticalLayout;
+import com.vaadin.ui.Window;
 import com.vaadin.ui.declarative.Design;
 import org.pprls.ui.model.UnitRepository;
 
@@ -13,11 +15,8 @@ public class RejectItem extends Window {
     VerticalLayout vertical;
     Tree<org.pprls.ui.model.Unit> organization;
 
-    public RejectItem(){
-        super("Απόρυψη");
-        setIcon(VaadinIcons.BAN);
-
-        Design.read("RejectItem.html", this);
+    public RejectItem() {
+        Design.read(this);
         organization.setItems(UnitRepository.INSTANCE.getUnits(), org.pprls.ui.model.Unit::getChilds);
         setContent(vertical);
 
@@ -25,7 +24,7 @@ public class RejectItem extends Window {
         proposal.addClickListener(clickEvent -> propose());
     }
 
-    private void propose(){
+    private void propose() {
 
     }
 }
