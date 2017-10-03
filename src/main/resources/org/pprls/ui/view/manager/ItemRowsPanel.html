@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="vaadin-version" content="8.1">
+</head>
+<body>
+<vaadin-panel size-full>
+    <vaadin-css-layout size-full>
+        <vaadin-grid _id="grid" responsive data-item-type="org.pprls.ui.domain.Item" size-full>
+            <table>
+                <colgroup>
+                    <col column-id="action" sortable>
+                    <col column-id="subject" sortable>
+                </colgroup>
+                <thead>
+                <tr default>
+                    <th plain-text column-ids="action">Ενέργεια</th>
+                    <th plain-text column-ids="subject">Θέμα</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </vaadin-grid>
+    </vaadin-css-layout>
+</vaadin-panel>
+</body>
+</html>

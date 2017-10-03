@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vaadin-version" content="8.1">
+</head>
+<body>
+    <vaadin-vertical-layout  size-full margin="false" spacing="false">
+        <vaadin-vertical-layout  width="-1" height="-1" _id="loginPanel" responsive margin="false" style-name="login-panel" :center :middle>
+            <vaadin-css-layout style-name="labels">
+                <vaadin-label style-name="h4 colored">Καλως ορισατε</vaadin-label>
+                <vaadin-label style-name="h3 colored">Paperless</vaadin-label>
+            </vaadin-css-layout>
+            <vaadin-horizontal-layout style-name="fields">
+                <vaadin-text-field _id="username" caption="Όνομα χρήστη" icon="fonticon://Vaadin-Icons/e80d" style-name="inline-icon"></vaadin-text-field>
+                <vaadin-password-field _id="password" caption="Συνθηματικό" icon="fonticon://Vaadin-Icons/e7f2" style-name="inline-icon"></vaadin-password-field>
+                <vaadin-button _id="signin" style-name="primary"  :bottom :left>είσοδος</vaadin-button>
+            </vaadin-horizontal-layout>
+        </vaadin-vertical-layout>
+    </vaadin-vertical-layout>
+</body>
+</html>
