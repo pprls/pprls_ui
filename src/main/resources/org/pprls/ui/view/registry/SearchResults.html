@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="vaadin-version" content="8.1">
+</head>
+<body>
+<vaadin-panel>
+    <vaadin-grid _id="results" responsive
+                 data-item-type="org.pprls.ui.domain.RegistryRecord"
+                 size-full>
+        <table>
+            <colgroup>
+                <col column-id="registryNumber" sortable>
+                <col column-id="registryDate" sortable>
+                <col column-id="year" sortable>
+                <col column-id="description" sortable>
+                <col column-id="correspondent" sortable>
+                <col column-id="recipient" sortable>
+            </colgroup>
+            <thead>
+            <tr default>
+                <th plain-text column-ids="registryNumber">Αρ. πρωτ.</th>
+                <th plain-text column-ids="registryDate">Ημ/νια</th>
+                <th plain-text column-ids="year">Έτος</th>
+                <th plain-text column-ids="description">Περιγραφή</th>
+                <th plain-text column-ids="correspondent">Από</th>
+                <th plain-text column-ids="recipient">Πρός</th>
+            </tr>
+            <tr default>
+                <th column-ids="registryNumber"><vaadin-text-field _id="registryNumberFilter" placeholder="πχ. 11234"></vaadin-text-field></th>
+                <th column-ids="registryDate"><vaadin-date-field _id="registryDateFilter"></vaadin-date-field></th>
+                <th column-ids="year"><vaadin-date-field _id="yearFilter" resolution="Year"></vaadin-date-field></th>
+                <th column-ids="description"><vaadin-text-field _id="descriptionFilter" placeholder="πχ. Δοικ.*Πράξ.*2017"></vaadin-text-field></th>
+                <th column-ids="correspondent"><vaadin-text-field _id="correspondentFilter" placeholder="πχ. ΔΑΟΚ .*ΗΠΕΙΡ.*"></vaadin-text-field></th>
+                <th column-ids="recipient"><vaadin-text-field _id="recipientFilter" placeholder="πχ. ΠΔ ΗΠΕΙΡ.*"></vaadin-text-field></th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </vaadin-grid>
+</vaadin-panel>
+</body>
+</html>

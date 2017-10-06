@@ -4,16 +4,19 @@ import com.vaadin.icons.VaadinIcons;
 import com.vaadin.navigator.View;
 import com.vaadin.server.Resource;
 import org.pprls.ui.view.dashboard.DashboardView;
+import org.pprls.ui.view.document.DocumentView;
 import org.pprls.ui.view.manager.DoneView;
 import org.pprls.ui.view.manager.PendingView;
+import org.pprls.ui.view.registry.RegisterIncomingView;
 import org.pprls.ui.view.registry.RegistraarView;
 
 public enum DashboardViewType {
     DASHBOARD("dashboard", "Πίνακας εποπτείας", DashboardView.class, VaadinIcons.OFFICE, true),
     ACTIVETASKS("activeTasks", "Εκκρεμότητες", PendingView.class, VaadinIcons.TASKS, false),
     DONETASKS("doneTasks", "Ολοκληρωμένα", DoneView.class, VaadinIcons.LEVEL_DOWN, false),
-    INCOMING("incoming", "Εισερχόμενο", RegistraarView.class, VaadinIcons.BOOK, false),
-    REGISTRY("registry", "Πρωτόκολλο", RegistraarView.class, VaadinIcons.BOOK, false);
+    REGISTRY("registry", "Πρωτόκολλο", RegistraarView.class, VaadinIcons.BOOK, false),
+    INCOMING("incoming", "Εισερχόμενο", RegisterIncomingView.class, VaadinIcons.BOOK, false),
+    OUTGOING("document", "Σύνταξη εγγράφου (εξερχόμενο)", DocumentView.class, VaadinIcons.FILE_TEXT, false);
 
     private final String viewName, viewUiName;
     private final Class<? extends View> viewClass;

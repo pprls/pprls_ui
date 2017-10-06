@@ -4,16 +4,12 @@ import com.google.common.eventbus.Subscribe;
 import com.vaadin.server.Responsive;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
-import org.pprls.ui.domain.Attachment;
 import org.pprls.ui.event.DashboardEvent;
 import org.pprls.ui.event.DashboardEventBus;
 import org.pprls.ui.view.ViewTemplate;
-import org.pprls.ui.view.widgets.AttachmentViewer;
+import org.pprls.ui.view.common.AttachmentViewer;
 import org.vaadin.alump.ckeditor.CKEditorConfig;
 import org.vaadin.alump.ckeditor.CKEditorTextField;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class PendingView extends ViewTemplate {
 

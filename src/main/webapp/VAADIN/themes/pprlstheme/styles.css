@@ -15290,11 +15290,21 @@ div.v-layout.v-horizontal.v-widget {
 	width: 100% !important;
 }
 
+.pprlstheme .dashboard-view.dashboard-view .dashboard-panels .dashboard-panel-vertical-full-slot {
+	padding: 8px;
+	min-height: 220px;
+	height: 100% !important;
+}
+
 .pprlstheme .dashboard-view.dashboard-view .dashboard-panels[width-range~="0-700px"] .dashboard-panel-slot {
 	width: 100% !important;
 }
 
 .pprlstheme .dashboard-view.dashboard-view .dashboard-panels[width-range~="701px-"] .dashboard-panel-slot {
+	width: 50% !important;
+}
+
+.pprlstheme .dashboard-view.dashboard-view .dashboard-panels[width-range~="701px-"] .dashboard-panel-vertical-full-slot {
 	width: 50% !important;
 }
 
@@ -15306,12 +15316,20 @@ div.v-layout.v-horizontal.v-widget {
 	height: 100%;
 }
 
+.pprlstheme .dashboard-view.dashboard-view .dashboard-panels[height-range~="0-440px"] .dashboard-panel-vertical-full-slot {
+	height: 100%;
+}
+
 .pprlstheme .dashboard-view.dashboard-view .dashboard-panels[height-range~="441px-"] .dashboard-panel-slot {
 	height: 50%;
 }
 
 .pprlstheme .dashboard-view.dashboard-view .dashboard-panels[height-range~="441px-"] .dashboard-panel-full-slot {
 	height: 50%;
+}
+
+.pprlstheme .dashboard-view.dashboard-view .dashboard-panels[height-range~="441px-"] .dashboard-panel-vertical-full-slot {
+	height: 100%;
 }
 
 .pprlstheme .dashboard-view.dashboard-view .dashboard-panels .dashboard-panel-slot.max {
@@ -15322,6 +15340,13 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .pprlstheme .dashboard-view.dashboard-view .dashboard-panels .dashboard-panel-full-slot.max {
+	width: 100% !important;
+	height: 100%;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.pprlstheme .dashboard-view.dashboard-view .dashboard-panels .dashboard-panel-vertical-full-slot.max {
 	width: 100% !important;
 	height: 100%;
 	padding-top: 0;
@@ -15341,10 +15366,6 @@ div.v-layout.v-horizontal.v-widget {
 	background-attachment: local;
 	color: #545145;
 	overflow: auto;
-}
-
-.pprlstheme .dashboard-view.dashboard-view .dashboard-panels .tasks notes {
-	width: 100% !important;
 }
 
 .pprlstheme .dashboard-view[width-range~="0-480px"] {

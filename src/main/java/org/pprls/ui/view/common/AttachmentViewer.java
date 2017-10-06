@@ -1,9 +1,11 @@
-package org.pprls.ui.view.widgets;
+package org.pprls.ui.view.common;
 
+import com.vaadin.annotations.DesignRoot;
 import com.vaadin.icons.VaadinIcons;
 import com.vaadin.server.StreamResource;
 import com.vaadin.server.ThemeResource;
 import com.vaadin.ui.*;
+import com.vaadin.ui.declarative.Design;
 import com.whitestein.vaadin.widgets.wtpdfviewer.WTPdfViewer;
 import org.pprls.ui.domain.Attachment;
 import org.vaadin.alump.ckeditor.CKEditorConfig;
@@ -16,6 +18,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
+@DesignRoot
 public class AttachmentViewer extends Panel{
 
     private List<Attachment> attachments = new ArrayList<>();
@@ -28,6 +31,8 @@ public class AttachmentViewer extends Panel{
 
     public AttachmentViewer(){
         super("Συνημμενα");
+
+        Design.read( this);
 
         final CKEditorConfig config = new CKEditorConfig();
         config.useCompactTags();

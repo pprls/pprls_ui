@@ -111,7 +111,13 @@
             padding: round($view-padding / 3);
             min-height: 220px;
             width: 100% !important;
-       }
+      }
+
+      .dashboard-panel-vertical-full-slot {
+           padding: round($view-padding / 3);
+           min-height: 220px;
+           height: 100% !important;
+      }
 
   	  &[width-range~="0-700px"] {
   	    .dashboard-panel-slot {
@@ -123,6 +129,9 @@
   	    .dashboard-panel-slot {
   	      width: 50% !important;
   	    }
+  	    .dashboard-panel-vertical-full-slot {
+          width: 50% !important;
+        }
   	  }
 
       &[height-range~="0-440px"] {
@@ -132,6 +141,9 @@
   	    .dashboard-panel-full-slot {
           height: 100%;
          }
+        .dashboard-panel-vertical-full-slot {
+          height: 100%;
+        }
   	  }
 
   	  &[height-range~="441px-"] {
@@ -140,7 +152,10 @@
   	    }
   	    .dashboard-panel-full-slot {
           height: 50%;
-         }
+        }
+        .dashboard-panel-vertical-full-slot {
+          height: 100%;
+        }
   	  }
 
       .dashboard-panel-slot.max {
@@ -155,7 +170,14 @@
               height: 100%;
               padding-top: 0;
               padding-bottom: 0;
-            }
+      }
+
+      .dashboard-panel-vertical-full-slot.max {
+                    width: 100% !important;
+                    height: 100%;
+                    padding-top: 0;
+                    padding-bottom: 0;
+      }
 
       .notes {
         .card {
@@ -173,11 +195,6 @@
           overflow: auto;
         }
       }
-
-      .tasks notes {
-         width: 100% !important;
-       }
-
     }
 
   }

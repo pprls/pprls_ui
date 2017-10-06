@@ -1,4 +1,4 @@
-package org.pprls.ui.view.registry;
+package org.pprls.ui.view.document;
 
 import com.vaadin.server.Responsive;
 import com.vaadin.ui.*;
@@ -6,9 +6,11 @@ import com.vaadin.ui.themes.ValoTheme;
 import org.pprls.ui.event.DashboardEventBus;
 import org.pprls.ui.view.ViewTemplate;
 import org.pprls.ui.view.manager.ItemRowsPanel;
+import org.pprls.ui.view.registry.SearchConditions;
+import org.pprls.ui.view.registry.SearchResults;
 import org.pprls.ui.view.common.AttachmentViewer;
 
-public class RegistraarView extends ViewTemplate {
+public class DocumentView extends ViewTemplate {
 
     public Component buildContent() {
         dashboardPanels = new CssLayout();
@@ -78,7 +80,6 @@ public class RegistraarView extends ViewTemplate {
 
         return panel;
     }
-
 
     public Component buildActiveTasksPanel() {
         ItemRowsPanel itemRowsPanel = new ItemRowsPanel(true);

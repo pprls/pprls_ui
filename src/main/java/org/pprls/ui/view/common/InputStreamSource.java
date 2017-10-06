@@ -1,4 +1,4 @@
-package org.pprls.ui.view.widgets;
+package org.pprls.ui.view.common;
 
 import com.vaadin.server.StreamResource;
 

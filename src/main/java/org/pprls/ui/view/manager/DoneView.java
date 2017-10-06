@@ -7,7 +7,7 @@ import com.vaadin.ui.themes.ValoTheme;
 import org.pprls.ui.event.DashboardEvent;
 import org.pprls.ui.event.DashboardEventBus;
 import org.pprls.ui.view.ViewTemplate;
-import org.pprls.ui.view.widgets.AttachmentViewer;
+import org.pprls.ui.view.common.AttachmentViewer;
 import org.vaadin.alump.ckeditor.CKEditorConfig;
 import org.vaadin.alump.ckeditor.CKEditorTextField;
 

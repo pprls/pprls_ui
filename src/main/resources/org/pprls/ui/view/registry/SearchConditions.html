@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="package-mapping"
+          content="my:org.pprls.ui.view.registry"/>
+</head>
+<body>
+<vaadin-panel margin="false">
+    <vaadin-vertical-layout margin="false">
+        <vaadin-horizontal-layout style-name="wrapping">
+            <vaadin-text-field _id="registryNumber" caption="Αριθμός Πρωτοκόλλου"></vaadin-text-field>
+            <vaadin-date-field _id="year" caption="Έτος" resolution="year">LocalDate.now()</vaadin-date-field>
+            <vaadin-date-field _id="from" caption="από"></vaadin-date-field>
+            <vaadin-date-field _id="to" caption="έως"></vaadin-date-field>
+        </vaadin-horizontal-layout>
+        <vaadin-text-area _id="keywords" caption="Λέξεις κλειδιά" rows="2" width="100%"
+                          description="Λέξεις ή φράσεις, χωρισμένες με κόμματα"></vaadin-text-area>
+        <vaadin-horizontal-layout style-name="wrapping">
+            <vaadin-combo-box caption="Συντάκτης"></vaadin-combo-box>
+            <vaadin-text-field caption="Αποστολέας/Παραλήπτης"></vaadin-text-field>
+        </vaadin-horizontal-layout>
+        <vaadin-horizontal-layout style-name="wrapping">
+            <vaadin-combo-box caption="Τρόπος αποστολής"></vaadin-combo-box>
+            <vaadin-text-field caption="Κωδικός αναφοράς"></vaadin-text-field>
+            <vaadin-date-field caption="Ημ/νία αποστολής παραλαβής"></vaadin-date-field>
+        </vaadin-horizontal-layout>
+        <vaadin-horizontal-layout style-name="wrapping">
+            <vaadin-combo-box caption="Διαβάθμιση"></vaadin-combo-box>
+            <vaadin-text-field caption="Αριθ. Πρωτ. Αποστολέα"></vaadin-text-field>
+            <vaadin-date-field caption="Ημ/νία Πρωτ. Αποστολέα"></vaadin-date-field>
+            <vaadin-button _id="searchButton" :bottom :center>Αναζήτηση</vaadin-button>
+        </vaadin-horizontal-layout>
+    </vaadin-vertical-layout>
+</vaadin-panel>
+</body>
+</html>
